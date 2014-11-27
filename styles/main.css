@@ -6,6 +6,11 @@ html, body
     height: 100%;
 }
 
+#app
+{
+    height: 100%;
+}
+
 #map-canvas
 {
     height: 100%;
@@ -47,6 +52,9 @@ html, body
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     background: rgb(255,255,255);
     background: rgba(255,255,255,0.9);
+    overflow: hidden;
+    margin: 0px 0px 20px 0px;
+    height: 350px;
 }
 
 .auth
@@ -54,26 +62,34 @@ html, body
     margin: 20px;
 }
 
-.sidebar
+.filler
+{
+    height: 500px;
+    width: 40px;
+    background: rgb(219,219,219);
+    background: rgba(219,219,219,0.5);
+}
+
+.marker
+{
+    width: 200px;
+    height: 100px;
+}
+
+#sidebar
 {
     float: left;
     height: auto;
+}
+
+#sidebar ul
+{
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.sidebar :first-child
-{
-    border-radius: 5px 0px 0px 0px;
-}
-
-.sidebar :last-child
-{
-    border-radius: 0px 0px 0px 5px;
-}
-
-.sidebar li
+#sidebar li
 {
     background: rgb(219,219,219);
     background: rgba(219,219,219,0.5);
@@ -83,7 +99,7 @@ html, body
     text-align: center;
 }
 
-.sidebar li a
+#sidebar li a
 {
     color: #bdc3c7;
     display: block;
@@ -91,17 +107,17 @@ html, body
     outline: none;
 }
 
-.sidebar li a:hover
+#sidebar li a:hover
 {
     color: #c0392b;
 }
 
-.sidebar .active
+#sidebar .active
 {
     background: transparent;
 }
 
-.sidebar .active a
+#sidebar .active a
 {
     color: #c0392b;
     border-radius: 5px 0px 0px 5px;
@@ -111,5 +127,14 @@ html, body
 {
     padding: 5px 10px 10px 10px;
     margin: 0px 0px 0px 40px;
-    border-radius: 0px 5px 5px 0px;
+    overflow: auto;
+    max-height: 350px;
+    width: 380px;
+}
+
+.hello
+{
+    color: #fff;
+    float: right;
+    margin: 20px;
 }
