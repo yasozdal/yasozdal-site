@@ -19,7 +19,8 @@ define(['marionette', 'underscore', 'json2',
         ui: {
             username: "input[name=username]",
             password: "input[name=password]",
-            email: "input[name=email]"
+            email: "input[name=email]",
+            error: ".error"
         },
 
         handleError: function(model, xhr, options) {
@@ -34,11 +35,16 @@ define(['marionette', 'underscore', 'json2',
                 }
             }
 
-            this.$('.error').html(description);
+            this.$('.error .content').html(description);
+            this.ui.error.show();
         },
 
         logged: function() {
             Backbone.history.navigate('/feed', {trigger: true});
+        },
+
+        onRender: function() {
+            this.ui.error.hide();
         },
 
         register: function(e) {

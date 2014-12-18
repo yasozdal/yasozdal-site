@@ -14,10 +14,6 @@ define(['marionette', 'underscore', 'text!feed/tpl/layout.html',
             }
         },
 
-        events: {
-            "click .more": "more"
-        },
-
         more: function() {
             this.entries.currentView.more();
         }

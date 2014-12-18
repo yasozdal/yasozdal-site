@@ -4,7 +4,15 @@ define(['marionette', 'underscore', 'text!feed/tpl/entry.html'], function (Mario
 
     return Marionette.ItemView.extend({
 
-        template: _.template(mainTemplate)
+        template: _.template(mainTemplate),
+
+        templateHelpers: {
+            Location: ''
+        },
+
+        onBeforeRender: function() {
+            this.templateHelpers.Location = this.model.get("Location").substring(0, 25) + "...";
+        }
 
     });
 

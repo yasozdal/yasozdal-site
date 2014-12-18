@@ -7,8 +7,9 @@ define(['marionette'], function (Marionette) {
         appRoutes: {
             "": "home",
             "feed": "feed",
-            "new": "new",
+            "add": "add",
             "event/:id": "event",
+            "access:options": "external",
             ":username": "profile"
         }
 

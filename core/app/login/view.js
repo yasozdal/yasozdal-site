@@ -18,12 +18,18 @@ define(['marionette', 'underscore', 'json2',
 
         ui: {
             username: "input[name=username]",
-            password: "input[name=password]"
+            password: "input[name=password]",
+            error: ".error"
         },
 
         handleError: function(model, xhr, options) {
             var error = JSON.parse(xhr.responseText);
-            this.$('.error').html('Oops! ' + error['error_description']);
+            this.$('.error .content').html('Oops! ' + error['error_description']);
+            this.ui.error.show();
+        },
+
+        onRender: function() {
+            this.ui.error.hide();
         },
 
         logged: function() {
