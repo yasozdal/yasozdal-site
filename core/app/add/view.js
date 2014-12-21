@@ -22,6 +22,8 @@ define(['marionette', 'jquery', 'underscore', 'json2', 'text!add/tpl/form.html',
             success: ".success"
         },
 
+        added: false,
+
         add: function(e) {
             e.preventDefault();
 
@@ -41,6 +43,7 @@ define(['marionette', 'jquery', 'underscore', 'json2', 'text!add/tpl/form.html',
 
             this.model.save(this.model.attributes, {
                 success: function() {
+                    self.added = true;
                     Backbone.history.navigate('/event/' + self.model.get("EventId"), {trigger: true});
                 },
 
@@ -83,6 +86,10 @@ define(['marionette', 'jquery', 'underscore', 'json2', 'text!add/tpl/form.html',
             }
 
             this.ui.minute.append($("<option>j</option>").attr("selected", "selected").text(pad(j, 2)));
+        },
+
+        onBeforeDestroy: function() {
+            if (!this.added) this.trigger('add:end');
         }
 
     });

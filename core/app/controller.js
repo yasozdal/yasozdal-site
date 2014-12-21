@@ -16,13 +16,13 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
 
                 callback();
             } else {
-                require(['layout/main/maps', 'events/collection', 'events/model','header/view',
-                'header/model'], function (Map, Collection, EventModel, HeaderView, HeaderModel) {
+                require(['layout/main/maps', 'events/collection', 'events/model', 'layout/main/marker_view', 'header/view',
+                'header/model'], function (Map, Collection, EventModel, MarkerView, HeaderView, HeaderModel) {
                     main.show(new Layout({
                         model: new Map(),
                         collection: new Collection([], {
-                            model: EventModel
-                            //location: LocataionModel
+                            model: EventModel,
+                            markerView: MarkerView
                         })
                     }));
 
@@ -31,12 +31,11 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
                     model.fetch({
                         success: function() {
                             main.currentView.header.show(new HeaderView({ model: model }));
+                            callback();
                         }
                     });
 
                     main.currentView.content.show(view);
-
-                    callback();
                 });
             }
         });
@@ -117,7 +116,9 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
 
                 require(['event/layout'], function (Layout) {
                     var view = new Layout({ templateHelpers: history });
-                    mainContent(view);
+                    mainContent(view, function() {
+                        main.currentView.header.currentView.dropup();
+                    });
                 });
 
             } else {

@@ -245,24 +245,25 @@ a.normal:hover {
   max-width: 100%;
   border: 1px solid #eeeeee;
   background-color: rgba(255, 255, 255, 0.5);
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  transition: border 0.5s ease; }
 
 #new-event textarea:focus {
   outline: none !important;
-  border: 1px solid rgba(197, 57, 43, 0.8);
-  box-shadow: 0 0 5px rgba(197, 57, 43, 0.8); }
+  border: 1px solid rgba(197, 57, 43, 0.8); }
 
 #new-event input[type=text] {
   border: 1px solid #eeeeee;
   background-color: rgba(255, 255, 255, 0.5);
   height: 24px;
   padding: 2px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  transition: border 0.5s ease; }
 
 #new-event input[type=text]:focus {
   outline: none !important;
-  border: 1px solid rgba(197, 57, 43, 0.8);
-  box-shadow: 0 0 5px rgba(197, 57, 43, 0.8); }
+  border: 1px solid rgba(197, 57, 43, 0.8); }
 
 #new-event input[type=submit] {
   margin: 10px 0px;
@@ -286,12 +287,12 @@ a.normal:hover {
   background-color: rgba(255, 255, 255, 0.5);
   height: 24px;
   cursor: pointer;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  transition: border 0.5s ease; }
 
 #new-event select:focus {
   outline: none !important;
-  border: 1px solid rgba(197, 57, 43, 0.8);
-  box-shadow: 0 0 5px rgba(197, 57, 43, 0.8); }
+  border: 1px solid rgba(197, 57, 43, 0.8); }
 
 #new-event span {
   margin: 0px 10px 0px 10px; }
@@ -401,14 +402,12 @@ img.coming-soon {
   font-size: 16px;
   border: 1px solid #eeeeee;
   padding: 3px;
-  transition: box-shadow 0.5s ease; }
+  transition: border 0.5s ease; }
 
 .auth input[type=text]:focus {
-  box-shadow: 0 0 5px rgba(197, 57, 43, 0.8);
   border: 1px solid rgba(197, 57, 43, 0.8); }
 
 .auth input[type=password]:focus {
-  box-shadow: 0 0 5px rgba(197, 57, 43, 0.8);
   border: 1px solid rgba(197, 57, 43, 0.8); }
 
 .auth input[type=submit] {
@@ -440,6 +439,9 @@ button, input, select, textarea {
 
 .auth :-ms-input-placeholder {
   font-size: 16px; }
+
+input:-webkit-autofill {
+  -webkit-background-color: #ffffff !important; }
 
 .auth .change {
   text-align: center;

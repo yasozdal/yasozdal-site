@@ -4,8 +4,7 @@ define(['marionette', 'underscore', 'jquery', 'text!layout/main/main.html',
 
     'use strict';
 
-    var markerIcon = new google.maps.MarkerImage("img/marker.png", null, null, null,
-        new google.maps.Size(36, 36));
+    var markerIcon = new google.maps.MarkerImage("img/marker.png", null, null, null, new google.maps.Size(36, 36));
 
     function rad(x) { return x*Math.PI/180; }
 
@@ -40,6 +39,10 @@ define(['marionette', 'underscore', 'jquery', 'text!layout/main/main.html',
         },
 
         initialize: function(options) {
+            this.map = null;
+            this.markers = [];
+            this.markerView = options.markerView;
+
             this.listenTo(this.content, 'show', this.updateSidebar);
             this.listenTo(this.content, 'show', this.contentScroll);
             this.listenTo(this.header, 'show', this.headerEvents);
@@ -56,10 +59,6 @@ define(['marionette', 'underscore', 'jquery', 'text!layout/main/main.html',
                 this.$( "#main" ).fadeIn();
             });
         },
-
-        map: null,
-
-        markers: [],
 
         contentScroll: function() {
             this.$("#scrollblock").perfectScrollbar({
@@ -141,12 +140,19 @@ define(['marionette', 'underscore', 'jquery', 'text!layout/main/main.html',
                         marker.setAnimation(null)
                     }, 1500);
 
+                    var pushed;
+
                     self.listenTo(self.content.currentView, 'add:start', function() {
                         marker.setOptions({ draggable: false });
-                        this.markers.push({
+                        pushed = self.markers.push({
                             marker: marker,
                             infoWindow: null
                         });
+                    });
+
+                    self.listenTo(self.content.currentView, 'add:end', function() {
+                        self.markers.splice(pushed, 1);
+                        marker.setMap(null);
                     });
 
                     self.listenTo(self.content.currentView, 'add:error', function() {
@@ -160,17 +166,23 @@ define(['marionette', 'underscore', 'jquery', 'text!layout/main/main.html',
                     function update(lat, lng) {
                         var latLng = { Latitude: lat, Longitude: lng };
                         self.content.currentView.model.set(latLng);
-                        location.geocoding(latLng);
+
+                        location.geocoding(latLng).done(function() {
+                            var result = location.get("results"), address;
+                            if (location.get("status") === "OK") {
+                                address = result[0].formatted_address;
+                            } else {
+                                address = "У чёрта на куличиках!";
+                            }
+
+                            self.content.currentView.ui.location.val(address);
+                        });
                     }
 
                     update(marker.position.lat(), marker.position.lng());
 
                     google.maps.event.addListener(marker, 'dragend', function(event) {
                         update(event.latLng.lat(), event.latLng.lng())
-                    });
-
-                    self.listenTo(location, 'change', function() {
-                        self.content.currentView.ui.location.val(location.get("results")[0].formatted_address);
                     });
                 }
             });
@@ -201,9 +213,9 @@ define(['marionette', 'underscore', 'jquery', 'text!layout/main/main.html',
             //isEqual не сработает, только сравнением с defect
             for (var j = 0; j < this.markers.length; j++) {
                 var position = this.markers[j].marker.getPosition();
-                if (Math.abs(latLng.lng() - position.lng()) < defect &&
-                Math.abs(latLng.lat() - position.lat()) < defect &&
-                (this.markers[j].infoWindow === null)) {
+                if ((this.markers[j].infoWindow === null) &&
+                Math.abs(latLng.lng() - position.lng()) < defect &&
+                Math.abs(latLng.lat() - position.lat()) < defect) {
                     marker = this.markers[j].marker;
                     this.markers.splice(j, 1);
                 }
@@ -413,8 +425,7 @@ define(['marionette', 'underscore', 'jquery', 'text!layout/main/main.html',
         },
 
         onBeforeDestroy: function() {
-            var self = this;
-            self.saveState();
+            this.saveState();
         },
 
         saveState: function () {

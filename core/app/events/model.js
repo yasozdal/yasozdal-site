@@ -1,4 +1,4 @@
-define(['backbone', 'common/location', 'plugins/date'], function (Backbone, Location) {
+define(['backbone', 'plugins/date'], function (Backbone) {
 
     'use strict';
 
@@ -17,12 +17,10 @@ define(['backbone', 'common/location', 'plugins/date'], function (Backbone, Loca
             var dateCreate = Date.parse(response.DateCreate);
             response.EventDate = eventDate.toString("dd MMM HH:mm");
             response.DateCreate = dateCreate.toString("dd MMM HH:mm");
-
-            var location = new Location();
-            location.geocoding({ Latitude: response.Latitude, Longitude: response.Longitude }).done(function() {
-                var result = location.get("results")[0] || { formatted_address: 'У чёрта на куличиках!' };
-                self.set({ Location: result.formatted_address  });
-            });
+            response.Location = 'У чёрта на куличиках!';
+            response.Location = response.LocationCaption === 'unknown' ? response.Location :
+                (response.LocationCaption || response.Location);
+            delete response.LocationCaption;
 
             return response;
         }

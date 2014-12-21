@@ -31,7 +31,9 @@ define(['backbone', 'jquery', 'app/config', 'signalr', 'signalrHubs'], function 
         fetchUntil: function(eventId) {
             var self = this;
             if (!(this.find(function(event) { return event.get("EventId") == eventId; }))) {
-                self.more({
+                self.fetch({
+                    remove: false,
+                    data: { count: 1 },
                     success: function() {
                         self.fetchUntil(eventId);
                     }
@@ -40,10 +42,9 @@ define(['backbone', 'jquery', 'app/config', 'signalr', 'signalrHubs'], function 
         },
 
         more: function(options) {
-            //this.fetch({ remove: false, data: { count: 1, offset: this.length } });
             options = options || {};
             options.success = options.success || function() {};
-            this.fetch({ remove: false, data: { count: 10 + this.length }, success: options.success });
+            this.fetch({ remove: false, data: { count: 10, offset: this.length }, success: options.success });
         }
 
     });

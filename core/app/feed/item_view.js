@@ -11,7 +11,12 @@ define(['marionette', 'underscore', 'text!feed/tpl/entry.html'], function (Mario
         },
 
         onBeforeRender: function() {
-            this.templateHelpers.Location = this.model.get("Location").substring(0, 25) + "...";
+            var location = this.model.get("Location");
+            if (location.length > 25) {
+                this.templateHelpers.Location = location.substring(0, 25).trim() + "...";
+            } else {
+                this.templateHelpers.Location = location;
+            }
         }
 
     });

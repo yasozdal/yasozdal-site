@@ -1,6 +1,7 @@
 .ui-datepicker {
     padding: 0;
     width: 186px;
+    font-size: 15px;
 }
 
 .ui-widget-content {
@@ -27,7 +28,7 @@
 }
 
 .ui-datepicker .ui-datepicker-title {
-    line-height: 1.6em;
+    line-height: 1.4em;
     font-weight: normal;
 }
 
@@ -124,5 +125,5 @@ td a.ui-state-active.ui-state-hover {
     position: relative;
     margin: 0px -18px 0px 0px;
     left: -18px;
-    top: 4px;
+    top: 2px;
 }
