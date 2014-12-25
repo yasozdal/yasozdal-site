@@ -55,7 +55,7 @@ a.previous i {
 
 .new {
   position: absolute;
-  top: 5px;
+  top: 8px;
   right: 16px;
   z-index: 150;
 }
@@ -282,11 +282,11 @@ a.normal:hover {
 #scrollblock {
   overflow: hidden;
   position: relative;
-  padding: 5px 15px 10px 10px;
-  margin: 5px 0px 0px 40px;
-  height: $resizable-height - 32;
-  min-height: $resizable-min-height - 32;
-  width: 385px;
+  //padding: 0px 15px 10px 10px;
+  margin: 0px 0px 0px 40px;
+  height: $resizable-height - 10px;
+  min-height: $resizable-min-height - 10px;
+  width: 410px;
 }
 
 .hello
@@ -306,6 +306,10 @@ a.normal:hover {
 .hello .link:hover {
   color: #000;
   border-bottom: 1px #000 dotted;
+}
+
+#new-event {
+  padding: 5px 15px 10px 10px;
 }
 
 #new-event textarea {
@@ -422,9 +426,16 @@ a.normal:hover {
 }
 
 .entry {
+  padding: 10px 15px 5px 10px;
+  transition: background-color 0.5s ease;
+}
+
+.entry .border-helper {
   border-bottom: 1px solid #eeeeee;
-  margin: 0px 0px 10px 0px;
-  padding: 0px 0px 5px 0px;
+}
+
+.unread {
+  background-color: rgba(252, 239, 161, 0.4);
 }
 
 .entry .userpic {
@@ -480,7 +491,7 @@ a.normal:hover {
 }
 
 img.coming-soon {
-  margin: 10px auto;
+  margin: 20px auto;
   height: 300px;
   display: block;
 }

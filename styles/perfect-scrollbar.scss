@@ -75,6 +75,7 @@
     @include scrollbar-rail-default;
     right: 3px; /* there must be 'right' for ps-scrollbar-y-rail */
     width: 8px;
+    margin: 3px 0 3px 0;
 
     >.ps-scrollbar-y {
       @include scrollbar-default;

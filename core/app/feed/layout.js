@@ -14,6 +14,14 @@ define(['marionette', 'underscore', 'text!feed/tpl/layout.html',
             }
         },
 
+        /*events: {
+            "mouseover #entries": "readall"
+        },
+
+        readall: function() {
+            this.$("#entries .unread").removeClass('unread');
+        },*/
+
         more: function() {
             this.entries.currentView.more();
         }

@@ -1,18 +1,20 @@
 <div class="entry">
-    <div class="userpic">
-        <img src="<%= User.Photo %>" />
-    </div>
-    <div class="userinfo">
-        <div class="username">
-            <a href="#<%= User.UserName %>" class="normal"><%= User.UserName %></a>
+    <div class="border-helper">
+        <div class="userpic">
+            <img src="<%= User.Photo %>" />
         </div>
-        <div class="date-create"><%= DateCreate %></div>
+        <div class="userinfo">
+            <div class="username">
+                <a href="#<%= User.UserName %>" class="normal"><%= User.UserName %></a>
+            </div>
+            <div class="date-create"><%= DateCreate %></div>
+        </div>
+        <div style="clear: both"></div>
+        <div class="description">
+            <%= Description %>
+        </div>
+        <span class="info date"><i class="fa fa-clock-o fa-lg"></i><%= EventDate %></span>
+        <span class="info"><i class="fa fa-map-marker fa-lg"></i><%= Location %></span>
+        <span class="more"><a href="#event/<%= EventId %>" class="normal">комментарии</a></span>
     </div>
-    <div style="clear: both"></div>
-    <div class="description">
-        <%= Description %>
-    </div>
-    <span class="info date"><i class="fa fa-clock-o fa-lg"></i><%= EventDate %></span>
-    <span class="info"><i class="fa fa-map-marker fa-lg"></i><%= Location %></span>
-    <span class="more"><a href="#event/<%= EventId %>" class="normal">комментарии</a></span>
 </div>
