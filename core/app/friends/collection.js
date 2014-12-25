@@ -4,9 +4,8 @@ define(['backbone', 'app/config'], function (Backbone, config) {
 
     return Backbone.Collection.extend({
 
-        //url: config.API + 'friends/my/m',
+        url: config.API + 'friends/my/',
 
-        url: 'http://nbixman-001-site1.myasp.net/api/' + 'friends/my/', //new server URL
 
         //more: function() {
         //this.fetch({ remove: false, data: { count: 1, offset: this.length }, processData: true });
