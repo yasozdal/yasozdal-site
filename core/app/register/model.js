@@ -4,7 +4,7 @@ define(['backbone', 'app/config', 'session'], function (Backbone, config, sessio
 
     return Backbone.Model.extend({
 
-        url: config.API + '/Account/Register',
+        url: config.API + 'Account/Register',
 
         sync: function(method, model, options) {
             options.headers = {

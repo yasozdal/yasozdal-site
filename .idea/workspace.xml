@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="919604c3-c255-484a-9244-7230a928d378" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/app/feed/tpl/entry.html" afterPath="$PROJECT_DIR$/core/app/feed/tpl/entry.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/app/feed/layout.js" afterPath="$PROJECT_DIR$/core/app/feed/layout.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/main.css" afterPath="$PROJECT_DIR$/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/main.scss" afterPath="$PROJECT_DIR$/styles/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/perfect-scrollbar.css" afterPath="$PROJECT_DIR$/styles/perfect-scrollbar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/perfect-scrollbar.scss" afterPath="$PROJECT_DIR$/styles/perfect-scrollbar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webResources.xml" />
+      <change type="DELETED" beforePath="C:\Users\Hellosandrik!\Documents\SE\Projects\yasozdal-site\dev.log" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\Hellosandrik!\Documents\SE\Projects\yasozdal-site\styles\main.css" afterPath="$PROJECT_DIR$/styles/scss/main.css" />
+      <change type="MOVED" beforePath="C:\Users\Hellosandrik!\Documents\SE\Projects\yasozdal-site\styles\main.scss" afterPath="$PROJECT_DIR$/styles/scss/main.scss" />
+      <change type="MOVED" beforePath="C:\Users\Hellosandrik!\Documents\SE\Projects\yasozdal-site\styles\perfect-scrollbar.css" afterPath="$PROJECT_DIR$/styles/scss/perfect-scrollbar.css" />
+      <change type="MOVED" beforePath="C:\Users\Hellosandrik!\Documents\SE\Projects\yasozdal-site\styles\perfect-scrollbar.scss" afterPath="$PROJECT_DIR$/styles/scss/perfect-scrollbar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/app/config.js" afterPath="$PROJECT_DIR$/core/app/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/app/register/model.js" afterPath="$PROJECT_DIR$/core/app/register/model.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="yasozdal.iws" />
@@ -33,31 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/app/layout/main.js">
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/app/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3139" max-vertical-offset="7548">
-              <caret line="200" column="38" selection-start-line="200" selection-start-column="38" selection-end-line="200" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="item_view.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/app/feed/item_view.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="493">
-              <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="entry.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/app/feed/tpl/entry.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-              <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="289">
+              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -73,41 +60,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.26153848" vertical-offset="391" max-vertical-offset="816">
-              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+            <state vertical-scroll-proportion="-1.9615384" vertical-offset="51" max-vertical-offset="816">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/app/add/tpl/form.html">
+      <file leaf-file-name="model.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/app/register/model.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1054">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/scss/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8160">
+              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/styles/main.scss">
+        <entry file="file://$PROJECT_DIR$/styles/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3324" max-vertical-offset="10217">
-              <caret line="422" column="0" selection-start-line="422" selection-start-column="0" selection-end-line="422" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="10217">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="perfect-scrollbar.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/styles/perfect-scrollbar.scss">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="2006">
-              <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="816">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.19604613" vertical-offset="0" max-vertical-offset="607">
+              <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -116,22 +123,9 @@
       <file leaf-file-name="layout.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/app/feed/layout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="612">
+            <state vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="612">
               <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/app/header/view.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="833">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding>
-                <marker date="1419436573266" expanded="true" signature="803:863" placeholder="{&quot;change&quot;: &quot;update&quot;...}" />
-                <marker date="1419436573266" expanded="true" signature="893:941" placeholder="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -146,9 +140,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response1.json" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -158,6 +149,16 @@
         <option value="$PROJECT_DIR$/core/app/feed/layout.js" />
         <option value="$PROJECT_DIR$/core/app/feed/item_view.js" />
         <option value="$PROJECT_DIR$/core/app/feed/tpl/entry.html" />
+        <option value="$PROJECT_DIR$/core/app/config.js" />
+        <option value="$PROJECT_DIR$/core/app/register/model.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/build.json" />
+        <option value="$PROJECT_DIR$/core/main.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/styles/scss/main.css" />
+        <option value="$PROJECT_DIR$/styles/scss/main.scss" />
+        <option value="$PROJECT_DIR$/build.js" />
       </list>
     </option>
   </component>
@@ -170,6 +171,88 @@
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+          <State>
+            <id>Cucumber</id>
+          </State>
+          <State>
+            <id>Dart</id>
+          </State>
+          <State>
+            <id>EJS</id>
+          </State>
+          <State>
+            <id>File Watchers</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralCoffeeScript</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>Invalid elementsCSS</id>
+          </State>
+          <State>
+            <id>JSON</id>
+          </State>
+          <State>
+            <id>Jade</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Portability issues</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>SASS/SCSS</id>
+          </State>
+          <State>
+            <id>Unit testingJavaScript</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Unit testingJavaScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
@@ -177,7 +260,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -196,6 +279,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -224,181 +308,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yasozdal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yasozdal-site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yasozdal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yasozdal-site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yasozdal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yasozdal-site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yasozdal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yasozdal-site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="feed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yasozdal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yasozdal-site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="feed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yasozdal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yasozdal-site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="events" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yasozdal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yasozdal-site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="add" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yasozdal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yasozdal-site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="add" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -408,11 +323,27 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="last_opened_file_path" value="C:/Ruby/bin/scss.bat" />
-    <property name="options.lastSelected" value="watcher.settings" />
+    <property name="options.lastSelected" value="Errors" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="165" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="165" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="166" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="840" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="166" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="164" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="166" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="840" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -423,16 +354,776 @@
       <recent name="C:\Program Files\XAMPP\htdocs\yasozdal\core\app\layout\tpl" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Hellosandrik!\Documents\SE\Projects\yasozdal-site\styles\scss" />
       <recent name="C:\Program Files\XAMPP\htdocs\yasozdal\core\app\event" />
       <recent name="C:\Program Files\XAMPP\htdocs\yasozdal\core\lib\gmaps" />
       <recent name="C:\Program Files\XAMPP\htdocs\yasozdal\core\lib\plugins\require" />
       <recent name="C:\Program Files\XAMPP\htdocs\yasozdal\core\lib\plugins\backbone" />
-      <recent name="C:\Program Files\XAMPP\htdocs\yasozdal\core\app\layout\main" />
     </key>
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
+                <option name="path" value="/" />
+                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
+                <option name="path" value="/" />
+                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="nbixman-001-site1.myasp.net" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="VPLKgGlKuH6UtqV8QEuFifS2ckNKuue_gYsvthwaZdsCt3nXBH0JZW7_I73ZmP2lDD4kzS2N70TJvO109JbMk_5UgR2AEjH0Rn1kWGrJxj17S9BveMIG2EQR-T-3WMZvsMxQiEupHmih52zqeSEAozWc5wX_GDislAyoz3OeVxE5k1YTEWEHUAq3VCbox-yAUlQdjMYW1v6o6czxI76V2gczf6uyDr3PrmuEmBgXV20THCS3py32gOTr5LtjkXg7DOrG6hQYPvV8KdmwJVSuiBihJBgfmdm2sJ_frpWPdCS-12HAGhlHIlCH9_SNGOCkqzwZEe5qea4x5D5T51wgem57Vnvqd986NMbKQACmUWZfVdJqvi-Ze53shSs7pALRIPhRUSb0agT1qTffkccyhFwfONgeY4kCCrKicDpD1O0zc0GCyRN2GiN_K5KR7fasNUIaHbn671tuU6oZgUVpsg" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="icreate.azurewebsites.net" />
+                <option name="name" value="ARRAffinity" />
+                <option name="path" value="/" />
+                <option name="value" value="4098b946e25125668ee1db6f55ce1f2af8f43e03571694fb3c80b6fb2531538a" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://icreate.azurewebsites.net" />
+          <option name="urlPath" value="api/Events" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="{UserName: &quot;smth155&quot;, Password: &quot;smth155&quot;, ConfirmPassword: &quot;smth155&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
+                <option name="path" value="/" />
+                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
+                <option name="path" value="/" />
+                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="nbixman-001-site1.myasp.net" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="VPLKgGlKuH6UtqV8QEuFifS2ckNKuue_gYsvthwaZdsCt3nXBH0JZW7_I73ZmP2lDD4kzS2N70TJvO109JbMk_5UgR2AEjH0Rn1kWGrJxj17S9BveMIG2EQR-T-3WMZvsMxQiEupHmih52zqeSEAozWc5wX_GDislAyoz3OeVxE5k1YTEWEHUAq3VCbox-yAUlQdjMYW1v6o6czxI76V2gczf6uyDr3PrmuEmBgXV20THCS3py32gOTr5LtjkXg7DOrG6hQYPvV8KdmwJVSuiBihJBgfmdm2sJ_frpWPdCS-12HAGhlHIlCH9_SNGOCkqzwZEe5qea4x5D5T51wgem57Vnvqd986NMbKQACmUWZfVdJqvi-Ze53shSs7pALRIPhRUSb0agT1qTffkccyhFwfONgeY4kCCrKicDpD1O0zc0GCyRN2GiN_K5KR7fasNUIaHbn671tuU6oZgUVpsg" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="icreate.azurewebsites.net" />
+                <option name="name" value="ARRAffinity" />
+                <option name="path" value="/" />
+                <option name="value" value="4098b946e25125668ee1db6f55ce1f2af8f43e03571694fb3c80b6fb2531538a" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://icreate.azurewebsites.net" />
+          <option name="urlPath" value="api/Account/Register" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{UserName: &quot;smth155&quot;, Password: &quot;smth155&quot;, ConfirmPassword: &quot;smth155&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
+                <option name="path" value="/" />
+                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
+                <option name="path" value="/" />
+                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="nbixman-001-site1.myasp.net" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="VPLKgGlKuH6UtqV8QEuFifS2ckNKuue_gYsvthwaZdsCt3nXBH0JZW7_I73ZmP2lDD4kzS2N70TJvO109JbMk_5UgR2AEjH0Rn1kWGrJxj17S9BveMIG2EQR-T-3WMZvsMxQiEupHmih52zqeSEAozWc5wX_GDislAyoz3OeVxE5k1YTEWEHUAq3VCbox-yAUlQdjMYW1v6o6czxI76V2gczf6uyDr3PrmuEmBgXV20THCS3py32gOTr5LtjkXg7DOrG6hQYPvV8KdmwJVSuiBihJBgfmdm2sJ_frpWPdCS-12HAGhlHIlCH9_SNGOCkqzwZEe5qea4x5D5T51wgem57Vnvqd986NMbKQACmUWZfVdJqvi-Ze53shSs7pALRIPhRUSb0agT1qTffkccyhFwfONgeY4kCCrKicDpD1O0zc0GCyRN2GiN_K5KR7fasNUIaHbn671tuU6oZgUVpsg" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="icreate.azurewebsites.net" />
+                <option name="name" value="ARRAffinity" />
+                <option name="path" value="/" />
+                <option name="value" value="4098b946e25125668ee1db6f55ce1f2af8f43e03571694fb3c80b6fb2531538a" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://icreate.azurewebsites.net" />
+          <option name="urlPath" value="api/Events" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{UserName: &quot;smth155&quot;, Password: &quot;smth155&quot;, ConfirmPassword: &quot;smth155&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
+                <option name="path" value="/" />
+                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
+                <option name="path" value="/" />
+                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="nbixman-001-site1.myasp.net" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="VPLKgGlKuH6UtqV8QEuFifS2ckNKuue_gYsvthwaZdsCt3nXBH0JZW7_I73ZmP2lDD4kzS2N70TJvO109JbMk_5UgR2AEjH0Rn1kWGrJxj17S9BveMIG2EQR-T-3WMZvsMxQiEupHmih52zqeSEAozWc5wX_GDislAyoz3OeVxE5k1YTEWEHUAq3VCbox-yAUlQdjMYW1v6o6czxI76V2gczf6uyDr3PrmuEmBgXV20THCS3py32gOTr5LtjkXg7DOrG6hQYPvV8KdmwJVSuiBihJBgfmdm2sJ_frpWPdCS-12HAGhlHIlCH9_SNGOCkqzwZEe5qea4x5D5T51wgem57Vnvqd986NMbKQACmUWZfVdJqvi-Ze53shSs7pALRIPhRUSb0agT1qTffkccyhFwfONgeY4kCCrKicDpD1O0zc0GCyRN2GiN_K5KR7fasNUIaHbn671tuU6oZgUVpsg" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="icreate.azurewebsites.net" />
+                <option name="name" value="ARRAffinity" />
+                <option name="path" value="/" />
+                <option name="value" value="4098b946e25125668ee1db6f55ce1f2af8f43e03571694fb3c80b6fb2531538a" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://icreate.azurewebsites.net" />
+          <option name="urlPath" value="api/Account/Register" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="{UserName: &quot;smth11&quot;, Password: &quot;smth11&quot;, ConfirmPassword: &quot;smth11&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
+                <option name="path" value="/" />
+                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
+                <option name="path" value="/" />
+                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="nbixman-001-site1.myasp.net" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="VPLKgGlKuH6UtqV8QEuFifS2ckNKuue_gYsvthwaZdsCt3nXBH0JZW7_I73ZmP2lDD4kzS2N70TJvO109JbMk_5UgR2AEjH0Rn1kWGrJxj17S9BveMIG2EQR-T-3WMZvsMxQiEupHmih52zqeSEAozWc5wX_GDislAyoz3OeVxE5k1YTEWEHUAq3VCbox-yAUlQdjMYW1v6o6czxI76V2gczf6uyDr3PrmuEmBgXV20THCS3py32gOTr5LtjkXg7DOrG6hQYPvV8KdmwJVSuiBihJBgfmdm2sJ_frpWPdCS-12HAGhlHIlCH9_SNGOCkqzwZEe5qea4x5D5T51wgem57Vnvqd986NMbKQACmUWZfVdJqvi-Ze53shSs7pALRIPhRUSb0agT1qTffkccyhFwfONgeY4kCCrKicDpD1O0zc0GCyRN2GiN_K5KR7fasNUIaHbn671tuU6oZgUVpsg" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="icreate.azurewebsites.net" />
+                <option name="name" value="ARRAffinity" />
+                <option name="path" value="/" />
+                <option name="value" value="4098b946e25125668ee1db6f55ce1f2af8f43e03571694fb3c80b6fb2531538a" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://icreate.azurewebsites.net" />
+          <option name="urlPath" value="api/Account/Register" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{UserName: &quot;smth11&quot;, Password: &quot;smth11&quot;, ConfirmPassword: &quot;smth11&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
+                <option name="path" value="/" />
+                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
+                <option name="path" value="/" />
+                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="nbixman-001-site1.myasp.net" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="VPLKgGlKuH6UtqV8QEuFifS2ckNKuue_gYsvthwaZdsCt3nXBH0JZW7_I73ZmP2lDD4kzS2N70TJvO109JbMk_5UgR2AEjH0Rn1kWGrJxj17S9BveMIG2EQR-T-3WMZvsMxQiEupHmih52zqeSEAozWc5wX_GDislAyoz3OeVxE5k1YTEWEHUAq3VCbox-yAUlQdjMYW1v6o6czxI76V2gczf6uyDr3PrmuEmBgXV20THCS3py32gOTr5LtjkXg7DOrG6hQYPvV8KdmwJVSuiBihJBgfmdm2sJ_frpWPdCS-12HAGhlHIlCH9_SNGOCkqzwZEe5qea4x5D5T51wgem57Vnvqd986NMbKQACmUWZfVdJqvi-Ze53shSs7pALRIPhRUSb0agT1qTffkccyhFwfONgeY4kCCrKicDpD1O0zc0GCyRN2GiN_K5KR7fasNUIaHbn671tuU6oZgUVpsg" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="icreate.azurewebsites.net" />
+                <option name="name" value="ARRAffinity" />
+                <option name="path" value="/" />
+                <option name="value" value="4098b946e25125668ee1db6f55ce1f2af8f43e03571694fb3c80b6fb2531538a" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://icreate.azurewebsites.net" />
+          <option name="urlPath" value="api/Account/Register" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{UserName:smth11, Password: smth11, ConfirmPassword: smth11}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
+                <option name="path" value="/" />
+                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
+                <option name="path" value="/" />
+                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="nbixman-001-site1.myasp.net" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="VPLKgGlKuH6UtqV8QEuFifS2ckNKuue_gYsvthwaZdsCt3nXBH0JZW7_I73ZmP2lDD4kzS2N70TJvO109JbMk_5UgR2AEjH0Rn1kWGrJxj17S9BveMIG2EQR-T-3WMZvsMxQiEupHmih52zqeSEAozWc5wX_GDislAyoz3OeVxE5k1YTEWEHUAq3VCbox-yAUlQdjMYW1v6o6czxI76V2gczf6uyDr3PrmuEmBgXV20THCS3py32gOTr5LtjkXg7DOrG6hQYPvV8KdmwJVSuiBihJBgfmdm2sJ_frpWPdCS-12HAGhlHIlCH9_SNGOCkqzwZEe5qea4x5D5T51wgem57Vnvqd986NMbKQACmUWZfVdJqvi-Ze53shSs7pALRIPhRUSb0agT1qTffkccyhFwfONgeY4kCCrKicDpD1O0zc0GCyRN2GiN_K5KR7fasNUIaHbn671tuU6oZgUVpsg" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="icreate.azurewebsites.net" />
+                <option name="name" value="ARRAffinity" />
+                <option name="path" value="/" />
+                <option name="value" value="4098b946e25125668ee1db6f55ce1f2af8f43e03571694fb3c80b6fb2531538a" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://icreate.azurewebsites.net" />
+          <option name="urlPath" value="api/Account/Register" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{UserName:smth11, Password: smth11, ConfirmPassword: smth11}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
+                <option name="path" value="/" />
+                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
+                <option name="path" value="/" />
+                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="nbixman-001-site1.myasp.net" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="VPLKgGlKuH6UtqV8QEuFifS2ckNKuue_gYsvthwaZdsCt3nXBH0JZW7_I73ZmP2lDD4kzS2N70TJvO109JbMk_5UgR2AEjH0Rn1kWGrJxj17S9BveMIG2EQR-T-3WMZvsMxQiEupHmih52zqeSEAozWc5wX_GDislAyoz3OeVxE5k1YTEWEHUAq3VCbox-yAUlQdjMYW1v6o6czxI76V2gczf6uyDr3PrmuEmBgXV20THCS3py32gOTr5LtjkXg7DOrG6hQYPvV8KdmwJVSuiBihJBgfmdm2sJ_frpWPdCS-12HAGhlHIlCH9_SNGOCkqzwZEe5qea4x5D5T51wgem57Vnvqd986NMbKQACmUWZfVdJqvi-Ze53shSs7pALRIPhRUSb0agT1qTffkccyhFwfONgeY4kCCrKicDpD1O0zc0GCyRN2GiN_K5KR7fasNUIaHbn671tuU6oZgUVpsg" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="icreate.azurewebsites.net" />
+                <option name="name" value="ARRAffinity" />
+                <option name="path" value="/" />
+                <option name="value" value="4098b946e25125668ee1db6f55ce1f2af8f43e03571694fb3c80b6fb2531538a" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://icreate.azurewebsites.net" />
+          <option name="urlPath" value="Token" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
+                <option name="path" value="/" />
+                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
+                <option name="path" value="/" />
+                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="nbixman-001-site1.myasp.net" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="VPLKgGlKuH6UtqV8QEuFifS2ckNKuue_gYsvthwaZdsCt3nXBH0JZW7_I73ZmP2lDD4kzS2N70TJvO109JbMk_5UgR2AEjH0Rn1kWGrJxj17S9BveMIG2EQR-T-3WMZvsMxQiEupHmih52zqeSEAozWc5wX_GDislAyoz3OeVxE5k1YTEWEHUAq3VCbox-yAUlQdjMYW1v6o6czxI76V2gczf6uyDr3PrmuEmBgXV20THCS3py32gOTr5LtjkXg7DOrG6hQYPvV8KdmwJVSuiBihJBgfmdm2sJ_frpWPdCS-12HAGhlHIlCH9_SNGOCkqzwZEe5qea4x5D5T51wgem57Vnvqd986NMbKQACmUWZfVdJqvi-Ze53shSs7pALRIPhRUSb0agT1qTffkccyhFwfONgeY4kCCrKicDpD1O0zc0GCyRN2GiN_K5KR7fasNUIaHbn671tuU6oZgUVpsg" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://icreate.azurewebsites.net" />
+          <option name="urlPath" value="Token" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="grant_type=password&amp;username=smth11&amp;password=smth11" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
+                <option name="path" value="/" />
+                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
+                <option name="path" value="/" />
+                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="nbixman-001-site1.myasp.net" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="DDDbB40tWuEofaPEb3s1YwDwRNLiqS5Z5LxlRFN0nbM1PQEe1zav3NGIXDuKPYp78WI_Je3J9ZXlbZAB0r-8DZF6W5PrpH8gNYuwi5qwiDU38TzzjNXEnPsXE1JolqS_ZH-QYZvlLxINrO_MSK6ys3LT4ihYAcaxpDtumFfw7OlNzg1_Gwhi3ypabGXCZHnGgXGm_6kwjCMaBbUERFsYMFz6TO2-WhiVKturgTVJFTYEKjcShaEbxHEEl1fLD1O3SqVSZV5Oc5wh--XAud_9XIT0BdQr92j8pKP9guzn3y5wKLzfLGdt6oTyMX0ARo7dfN4AzuK6bvLGr6cOwO3iMku-aJoakcs3uqxG5PGu1Vy654mJrEy2ToYbw3PcOw1JgQelZhmdjA7E_1UQwu-4uLCUENbm22sxgJPHU-b_LOyTewQFm7VizHvUMiNKR29tJMRXOozFCbaYB-v0rMUmnA" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://nbixman-001-site1.myasp.net" />
+          <option name="urlPath" value="Token" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="grant_type=password&amp;username=smth11&amp;password=smth11" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
+                <option name="path" value="/" />
+                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
+                <option name="path" value="/" />
+                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="nbixman-001-site1.myasp.net" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="DDDbB40tWuEofaPEb3s1YwDwRNLiqS5Z5LxlRFN0nbM1PQEe1zav3NGIXDuKPYp78WI_Je3J9ZXlbZAB0r-8DZF6W5PrpH8gNYuwi5qwiDU38TzzjNXEnPsXE1JolqS_ZH-QYZvlLxINrO_MSK6ys3LT4ihYAcaxpDtumFfw7OlNzg1_Gwhi3ypabGXCZHnGgXGm_6kwjCMaBbUERFsYMFz6TO2-WhiVKturgTVJFTYEKjcShaEbxHEEl1fLD1O3SqVSZV5Oc5wh--XAud_9XIT0BdQr92j8pKP9guzn3y5wKLzfLGdt6oTyMX0ARo7dfN4AzuK6bvLGr6cOwO3iMku-aJoakcs3uqxG5PGu1Vy654mJrEy2ToYbw3PcOw1JgQelZhmdjA7E_1UQwu-4uLCUENbm22sxgJPHU-b_LOyTewQFm7VizHvUMiNKR29tJMRXOozFCbaYB-v0rMUmnA" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://nbixman-001-site1.myasp.net" />
+          <option name="urlPath" value="Token" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer BSWhvXqg7SR2ynL9TX__YOfY8SABLCxCfCBytv-BE5fj5Ty_1xMeNTgR6ct0jaYdHSNvObffW0ZfodGm6cb4CtlXnq7VBEWKbY072CoZih3-Tw4Lm2Vwbc58FFsvb7xc2vg2zTCoEBHFmE_RULDuJD3fU-aWDqPG615NWeAfpvkGRuW1EObUpwLJODlnXTIUbNcHRlCY1MAYuGqnEKRNH3a1u2VJsnLUTfL72YEYniQozqVklrxx2jXBXnz32xfBy_uI6RdcZBfEsyShwildohH4cLeqo4VQ00V_H8EJGVRiib26Jx53w-A7U5u8czIa0jZHPa_9CFH3B5LgeiIVS5TxEK17BgZgE0KlsA6BcJA6JyX39OA2MIo5Yl5cECjfoTqoVnPGEFjD7mV7Qn1i2FyTf4LRIfIpOD8wZ33Ngd3duczm25ACNFsjN6dh-Pza5A8s4hNbLKJonUrGanOhPA" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
+                <option name="path" value="/" />
+                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
+                <option name="path" value="/" />
+                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="nbixman-001-site1.myasp.net" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="DDDbB40tWuEofaPEb3s1YwDwRNLiqS5Z5LxlRFN0nbM1PQEe1zav3NGIXDuKPYp78WI_Je3J9ZXlbZAB0r-8DZF6W5PrpH8gNYuwi5qwiDU38TzzjNXEnPsXE1JolqS_ZH-QYZvlLxINrO_MSK6ys3LT4ihYAcaxpDtumFfw7OlNzg1_Gwhi3ypabGXCZHnGgXGm_6kwjCMaBbUERFsYMFz6TO2-WhiVKturgTVJFTYEKjcShaEbxHEEl1fLD1O3SqVSZV5Oc5wh--XAud_9XIT0BdQr92j8pKP9guzn3y5wKLzfLGdt6oTyMX0ARo7dfN4AzuK6bvLGr6cOwO3iMku-aJoakcs3uqxG5PGu1Vy654mJrEy2ToYbw3PcOw1JgQelZhmdjA7E_1UQwu-4uLCUENbm22sxgJPHU-b_LOyTewQFm7VizHvUMiNKR29tJMRXOozFCbaYB-v0rMUmnA" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://nbixman-001-site1.myasp.net" />
+          <option name="urlPath" value="api/Events" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer BSWhvXqg7SR2ynL9TX__YOfY8SABLCxCfCBytv-BE5fj5Ty_1xMeNTgR6ct0jaYdHSNvObffW0ZfodGm6cb4CtlXnq7VBEWKbY072CoZih3-Tw4Lm2Vwbc58FFsvb7xc2vg2zTCoEBHFmE_RULDuJD3fU-aWDqPG615NWeAfpvkGRuW1EObUpwLJODlnXTIUbNcHRlCY1MAYuGqnEKRNH3a1u2VJsnLUTfL72YEYniQozqVklrxx2jXBXnz32xfBy_uI6RdcZBfEsyShwildohH4cLeqo4VQ00V_H8EJGVRiib26Jx53w-A7U5u8czIa0jZHPa_9CFH3B5LgeiIVS5TxEK17BgZgE0KlsA6BcJA6JyX39OA2MIo5Yl5cECjfoTqoVnPGEFjD7mV7Qn1i2FyTf4LRIfIpOD8wZ33Ngd3duczm25ACNFsjN6dh-Pza5A8s4hNbLKJonUrGanOhPA" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
+                <option name="path" value="/" />
+                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
+                <option name="path" value="/" />
+                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="nbixman-001-site1.myasp.net" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="DDDbB40tWuEofaPEb3s1YwDwRNLiqS5Z5LxlRFN0nbM1PQEe1zav3NGIXDuKPYp78WI_Je3J9ZXlbZAB0r-8DZF6W5PrpH8gNYuwi5qwiDU38TzzjNXEnPsXE1JolqS_ZH-QYZvlLxINrO_MSK6ys3LT4ihYAcaxpDtumFfw7OlNzg1_Gwhi3ypabGXCZHnGgXGm_6kwjCMaBbUERFsYMFz6TO2-WhiVKturgTVJFTYEKjcShaEbxHEEl1fLD1O3SqVSZV5Oc5wh--XAud_9XIT0BdQr92j8pKP9guzn3y5wKLzfLGdt6oTyMX0ARo7dfN4AzuK6bvLGr6cOwO3iMku-aJoakcs3uqxG5PGu1Vy654mJrEy2ToYbw3PcOw1JgQelZhmdjA7E_1UQwu-4uLCUENbm22sxgJPHU-b_LOyTewQFm7VizHvUMiNKR29tJMRXOozFCbaYB-v0rMUmnA" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://nbixman-001-site1.myasp.net" />
+          <option name="urlPath" value="api/Endpoints/GetUploadUrl/AddEvent" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer BSWhvXqg7SR2ynL9TX__YOfY8SABLCxCfCBytv-BE5fj5Ty_1xMeNTgR6ct0jaYdHSNvObffW0ZfodGm6cb4CtlXnq7VBEWKbY072CoZih3-Tw4Lm2Vwbc58FFsvb7xc2vg2zTCoEBHFmE_RULDuJD3fU-aWDqPG615NWeAfpvkGRuW1EObUpwLJODlnXTIUbNcHRlCY1MAYuGqnEKRNH3a1u2VJsnLUTfL72YEYniQozqVklrxx2jXBXnz32xfBy_uI6RdcZBfEsyShwildohH4cLeqo4VQ00V_H8EJGVRiib26Jx53w-A7U5u8czIa0jZHPa_9CFH3B5LgeiIVS5TxEK17BgZgE0KlsA6BcJA6JyX39OA2MIo5Yl5cECjfoTqoVnPGEFjD7mV7Qn1i2FyTf4LRIfIpOD8wZ33Ngd3duczm25ACNFsjN6dh-Pza5A8s4hNbLKJonUrGanOhPA" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
+                <option name="path" value="/" />
+                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
+                <option name="path" value="/" />
+                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="nbixman-001-site1.myasp.net" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="fET0EupmnehI743tjzn6XqVz1etnSZVV6vYqiOmmp7p_HpIuQIBwk_L64UaTr_93sMBUx7T27bGAdbJRJ71nseoF-CKGq_jTsaFW2j7NgQ0fD6CPBIE3yfwVvOHA91mq5d11aGMZkHy6Dyr7PUbNbU1VBV1qgMHrr66P4T3cYraqa_SENS8tOd19VO-4VFrIjXjQrXliGR98UVsc1KiV_nzkwHEVoahJy9Mi3Ct7BeupS1-LiE-aFpBt5O3bz0ZUzuizUpDhkqGxei2JrbkRCOXJHJ3-cNYmQ2rF2zHREQXkM73A-TMjU0J0c-OJm5GfNnwv8jTv6I6QZ2vERF_GpKxrQPJGYPrAneC84J_fosb8SiNq0cMs7eptgtGxvyLPISBUyvf4uJsYkEOb3JyhbCfKcIwKjVmRhuYlXsYCh3o5eU6SkwB03JEBlnkODd0_" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://nbixman-001-site1.myasp.net" />
+          <option name="urlPath" value="api/Endpoints/GetUploadUrl/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer BSWhvXqg7SR2ynL9TX__YOfY8SABLCxCfCBytv-BE5fj5Ty_1xMeNTgR6ct0jaYdHSNvObffW0ZfodGm6cb4CtlXnq7VBEWKbY072CoZih3-Tw4Lm2Vwbc58FFsvb7xc2vg2zTCoEBHFmE_RULDuJD3fU-aWDqPG615NWeAfpvkGRuW1EObUpwLJODlnXTIUbNcHRlCY1MAYuGqnEKRNH3a1u2VJsnLUTfL72YEYniQozqVklrxx2jXBXnz32xfBy_uI6RdcZBfEsyShwildohH4cLeqo4VQ00V_H8EJGVRiib26Jx53w-A7U5u8czIa0jZHPa_9CFH3B5LgeiIVS5TxEK17BgZgE0KlsA6BcJA6JyX39OA2MIo5Yl5cECjfoTqoVnPGEFjD7mV7Qn1i2FyTf4LRIfIpOD8wZ33Ngd3duczm25ACNFsjN6dh-Pza5A8s4hNbLKJonUrGanOhPA" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="biscuits">
             <list>
@@ -2559,669 +3250,6 @@
           <option name="textToSend" value="{UserName:&quot;sandrik&quot;,Password:&quot;sandrik&quot;,ConfirmPassword:&quot;sandrik&quot;}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
-                <option name="path" value="/" />
-                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
-                <option name="path" value="/" />
-                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="nbixman-001-site1.myasp.net" />
-                <option name="name" value=".AspNet.Cookies" />
-                <option name="path" value="/" />
-                <option name="value" value="OLB3qRl4DBD6A7XHTZL-J_9htpvNOfNHXexEbvAwMTiTnpO2-pZe59oKNNkULakRr9kUEe3lHVpVxlPQPQn0dVqexBG7sRTEM8UXRmSgv2QKOz9nQrYekRwWuM757RyoUOWTGY4rs5Zk-ecW2EQMhzjmgbFNNhT92Guqd6L3cq7CDbIMCjajcvo84OGRGfhimhyBFgtYpHNcOiNkkP9aU-9Jj5z_SNPBPll4IJtJiFLfrUxJfZbHry5t6XmAynPDcDA7Agz6sVg-KYjIt8PBLGTn4OdlJjsvbKo5XXshUDUZYHASwavQkXA7i4S4AxKP7wQEJenpIIttJg498AKxd8GmthEz7lpmnRsCeBoq263q023LXhfT-bogrzrmYORZ4UCSltg9O-tnZLBp_FX8c_0NFTuGpIT6uPWy5xH1qjvICp59wZjc2BgbbFxr80fg" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://nbixman-001-site1.myasp.net" />
-          <option name="urlPath" value="api/Events" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer BSWhvXqg7SR2ynL9TX__YOfY8SABLCxCfCBytv-BE5fj5Ty_1xMeNTgR6ct0jaYdHSNvObffW0ZfodGm6cb4CtlXnq7VBEWKbY072CoZih3-Tw4Lm2Vwbc58FFsvb7xc2vg2zTCoEBHFmE_RULDuJD3fU-aWDqPG615NWeAfpvkGRuW1EObUpwLJODlnXTIUbNcHRlCY1MAYuGqnEKRNH3a1u2VJsnLUTfL72YEYniQozqVklrxx2jXBXnz32xfBy_uI6RdcZBfEsyShwildohH4cLeqo4VQ00V_H8EJGVRiib26Jx53w-A7U5u8czIa0jZHPa_9CFH3B5LgeiIVS5TxEK17BgZgE0KlsA6BcJA6JyX39OA2MIo5Yl5cECjfoTqoVnPGEFjD7mV7Qn1i2FyTf4LRIfIpOD8wZ33Ngd3duczm25ACNFsjN6dh-Pza5A8s4hNbLKJonUrGanOhPA" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="{UserName:&quot;sandrik&quot;,Password:&quot;sandrik&quot;,ConfirmPassword:&quot;sandrik&quot;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
-                <option name="path" value="/" />
-                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
-                <option name="path" value="/" />
-                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="nbixman-001-site1.myasp.net" />
-                <option name="name" value=".AspNet.Cookies" />
-                <option name="path" value="/" />
-                <option name="value" value="OLB3qRl4DBD6A7XHTZL-J_9htpvNOfNHXexEbvAwMTiTnpO2-pZe59oKNNkULakRr9kUEe3lHVpVxlPQPQn0dVqexBG7sRTEM8UXRmSgv2QKOz9nQrYekRwWuM757RyoUOWTGY4rs5Zk-ecW2EQMhzjmgbFNNhT92Guqd6L3cq7CDbIMCjajcvo84OGRGfhimhyBFgtYpHNcOiNkkP9aU-9Jj5z_SNPBPll4IJtJiFLfrUxJfZbHry5t6XmAynPDcDA7Agz6sVg-KYjIt8PBLGTn4OdlJjsvbKo5XXshUDUZYHASwavQkXA7i4S4AxKP7wQEJenpIIttJg498AKxd8GmthEz7lpmnRsCeBoq263q023LXhfT-bogrzrmYORZ4UCSltg9O-tnZLBp_FX8c_0NFTuGpIT6uPWy5xH1qjvICp59wZjc2BgbbFxr80fg" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://nbixman-001-site1.myasp.net" />
-          <option name="urlPath" value="api/Events" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="BSWhvXqg7SR2ynL9TX__YOfY8SABLCxCfCBytv-BE5fj5Ty_1xMeNTgR6ct0jaYdHSNvObffW0ZfodGm6cb4CtlXnq7VBEWKbY072CoZih3-Tw4Lm2Vwbc58FFsvb7xc2vg2zTCoEBHFmE_RULDuJD3fU-aWDqPG615NWeAfpvkGRuW1EObUpwLJODlnXTIUbNcHRlCY1MAYuGqnEKRNH3a1u2VJsnLUTfL72YEYniQozqVklrxx2jXBXnz32xfBy_uI6RdcZBfEsyShwildohH4cLeqo4VQ00V_H8EJGVRiib26Jx53w-A7U5u8czIa0jZHPa_9CFH3B5LgeiIVS5TxEK17BgZgE0KlsA6BcJA6JyX39OA2MIo5Yl5cECjfoTqoVnPGEFjD7mV7Qn1i2FyTf4LRIfIpOD8wZ33Ngd3duczm25ACNFsjN6dh-Pza5A8s4hNbLKJonUrGanOhPA" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="{UserName:&quot;sandrik&quot;,Password:&quot;sandrik&quot;,ConfirmPassword:&quot;sandrik&quot;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
-                <option name="path" value="/" />
-                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
-                <option name="path" value="/" />
-                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="nbixman-001-site1.myasp.net" />
-                <option name="name" value=".AspNet.Cookies" />
-                <option name="path" value="/" />
-                <option name="value" value="OLB3qRl4DBD6A7XHTZL-J_9htpvNOfNHXexEbvAwMTiTnpO2-pZe59oKNNkULakRr9kUEe3lHVpVxlPQPQn0dVqexBG7sRTEM8UXRmSgv2QKOz9nQrYekRwWuM757RyoUOWTGY4rs5Zk-ecW2EQMhzjmgbFNNhT92Guqd6L3cq7CDbIMCjajcvo84OGRGfhimhyBFgtYpHNcOiNkkP9aU-9Jj5z_SNPBPll4IJtJiFLfrUxJfZbHry5t6XmAynPDcDA7Agz6sVg-KYjIt8PBLGTn4OdlJjsvbKo5XXshUDUZYHASwavQkXA7i4S4AxKP7wQEJenpIIttJg498AKxd8GmthEz7lpmnRsCeBoq263q023LXhfT-bogrzrmYORZ4UCSltg9O-tnZLBp_FX8c_0NFTuGpIT6uPWy5xH1qjvICp59wZjc2BgbbFxr80fg" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://nbixman-001-site1.myasp.net" />
-          <option name="urlPath" value="api/Account/Register" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{UserName:&quot;sandrik&quot;,Password:&quot;sandrik&quot;,ConfirmPassword:&quot;sandrik&quot;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
-                <option name="path" value="/" />
-                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
-                <option name="path" value="/" />
-                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="nbixman-001-site1.myasp.net" />
-                <option name="name" value=".AspNet.Cookies" />
-                <option name="path" value="/" />
-                <option name="value" value="OLB3qRl4DBD6A7XHTZL-J_9htpvNOfNHXexEbvAwMTiTnpO2-pZe59oKNNkULakRr9kUEe3lHVpVxlPQPQn0dVqexBG7sRTEM8UXRmSgv2QKOz9nQrYekRwWuM757RyoUOWTGY4rs5Zk-ecW2EQMhzjmgbFNNhT92Guqd6L3cq7CDbIMCjajcvo84OGRGfhimhyBFgtYpHNcOiNkkP9aU-9Jj5z_SNPBPll4IJtJiFLfrUxJfZbHry5t6XmAynPDcDA7Agz6sVg-KYjIt8PBLGTn4OdlJjsvbKo5XXshUDUZYHASwavQkXA7i4S4AxKP7wQEJenpIIttJg498AKxd8GmthEz7lpmnRsCeBoq263q023LXhfT-bogrzrmYORZ4UCSltg9O-tnZLBp_FX8c_0NFTuGpIT6uPWy5xH1qjvICp59wZjc2BgbbFxr80fg" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://nbixman-001-site1.myasp.net" />
-          <option name="urlPath" value="api/friends/my/m" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer PLjL4v4QmnLkjHAeN1Ri_lhwZwWdvEqDVhXIJFSNXTw9y8d8wPzn1U6DLwUWG_QNEkUb2MdigXs9-e6_ZgXGxLcPZVADjGDSMTLpSMMmd7DUDVIGYONCYRf4mt7k8R6Hmcz2hvFxUbLNCdv6CQOn1c4IK09MSrGz6kvvcrEMMqF7jF0FkvBUYO7Yifbb84wlTd5N1S7EQKALaqATbr0KQ08ZCeDkkMMCxqNpNL652zXybRsOdk2-IHnW1yIJaduyX4eN82JiJHPTTlRCp6VXzQ8yFeYm1-aGTbUy6Pp28qly-8AuY6D2meuIRC6uc0gWjlSixqxp3wQRa0b9cwpSNBLuvLL8tJflsRsFgDCcd-GkF61ETRn5ryGfMG8aqPxRkS9E2-41kV4oYmD9wsislLa2rQ8GrSSNdOxGOoqrV749cg7laukCYdK2Ezhqmaa5JGJZidw3sRBUZfp6uyyZmA" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="grant_type=password&amp;username=smth11&amp;password=smth11" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
-                <option name="path" value="/" />
-                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
-                <option name="path" value="/" />
-                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="nbixman-001-site1.myasp.net" />
-                <option name="name" value=".AspNet.Cookies" />
-                <option name="path" value="/" />
-                <option name="value" value="OLB3qRl4DBD6A7XHTZL-J_9htpvNOfNHXexEbvAwMTiTnpO2-pZe59oKNNkULakRr9kUEe3lHVpVxlPQPQn0dVqexBG7sRTEM8UXRmSgv2QKOz9nQrYekRwWuM757RyoUOWTGY4rs5Zk-ecW2EQMhzjmgbFNNhT92Guqd6L3cq7CDbIMCjajcvo84OGRGfhimhyBFgtYpHNcOiNkkP9aU-9Jj5z_SNPBPll4IJtJiFLfrUxJfZbHry5t6XmAynPDcDA7Agz6sVg-KYjIt8PBLGTn4OdlJjsvbKo5XXshUDUZYHASwavQkXA7i4S4AxKP7wQEJenpIIttJg498AKxd8GmthEz7lpmnRsCeBoq263q023LXhfT-bogrzrmYORZ4UCSltg9O-tnZLBp_FX8c_0NFTuGpIT6uPWy5xH1qjvICp59wZjc2BgbbFxr80fg" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://nbixman-001-site1.myasp.net" />
-          <option name="urlPath" value="/api/Account/UserInfo" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer PLjL4v4QmnLkjHAeN1Ri_lhwZwWdvEqDVhXIJFSNXTw9y8d8wPzn1U6DLwUWG_QNEkUb2MdigXs9-e6_ZgXGxLcPZVADjGDSMTLpSMMmd7DUDVIGYONCYRf4mt7k8R6Hmcz2hvFxUbLNCdv6CQOn1c4IK09MSrGz6kvvcrEMMqF7jF0FkvBUYO7Yifbb84wlTd5N1S7EQKALaqATbr0KQ08ZCeDkkMMCxqNpNL652zXybRsOdk2-IHnW1yIJaduyX4eN82JiJHPTTlRCp6VXzQ8yFeYm1-aGTbUy6Pp28qly-8AuY6D2meuIRC6uc0gWjlSixqxp3wQRa0b9cwpSNBLuvLL8tJflsRsFgDCcd-GkF61ETRn5ryGfMG8aqPxRkS9E2-41kV4oYmD9wsislLa2rQ8GrSSNdOxGOoqrV749cg7laukCYdK2Ezhqmaa5JGJZidw3sRBUZfp6uyyZmA" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="grant_type=password&amp;username=smth11&amp;password=smth11" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
-                <option name="path" value="/" />
-                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
-                <option name="path" value="/" />
-                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="nbixman-001-site1.myasp.net" />
-                <option name="name" value=".AspNet.Cookies" />
-                <option name="path" value="/" />
-                <option name="value" value="OLB3qRl4DBD6A7XHTZL-J_9htpvNOfNHXexEbvAwMTiTnpO2-pZe59oKNNkULakRr9kUEe3lHVpVxlPQPQn0dVqexBG7sRTEM8UXRmSgv2QKOz9nQrYekRwWuM757RyoUOWTGY4rs5Zk-ecW2EQMhzjmgbFNNhT92Guqd6L3cq7CDbIMCjajcvo84OGRGfhimhyBFgtYpHNcOiNkkP9aU-9Jj5z_SNPBPll4IJtJiFLfrUxJfZbHry5t6XmAynPDcDA7Agz6sVg-KYjIt8PBLGTn4OdlJjsvbKo5XXshUDUZYHASwavQkXA7i4S4AxKP7wQEJenpIIttJg498AKxd8GmthEz7lpmnRsCeBoq263q023LXhfT-bogrzrmYORZ4UCSltg9O-tnZLBp_FX8c_0NFTuGpIT6uPWy5xH1qjvICp59wZjc2BgbbFxr80fg" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://nbixman-001-site1.myasp.net" />
-          <option name="urlPath" value="/api/Account/UserInfo" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer PLjL4v4QmnLkjHAeN1Ri_lhwZwWdvEqDVhXIJFSNXTw9y8d8wPzn1U6DLwUWG_QNEkUb2MdigXs9-e6_ZgXGxLcPZVADjGDSMTLpSMMmd7DUDVIGYONCYRf4mt7k8R6Hmcz2hvFxUbLNCdv6CQOn1c4IK09MSrGz6kvvcrEMMqF7jF0FkvBUYO7Yifbb84wlTd5N1S7EQKALaqATbr0KQ08ZCeDkkMMCxqNpNL652zXybRsOdk2-IHnW1yIJaduyX4eN82JiJHPTTlRCp6VXzQ8yFeYm1-aGTbUy6Pp28qly-8AuY6D2meuIRC6uc0gWjlSixqxp3wQRa0b9cwpSNBLuvLL8tJflsRsFgDCcd-GkF61ETRn5ryGfMG8aqPxRkS9E2-41kV4oYmD9wsislLa2rQ8GrSSNdOxGOoqrV749cg7laukCYdK2Ezhqmaa5JGJZidw3sRBUZfp6uyyZmA" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="grant_type=password&amp;username=smth11&amp;password=smth11" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
-                <option name="path" value="/" />
-                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
-                <option name="path" value="/" />
-                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="nbixman-001-site1.myasp.net" />
-                <option name="name" value=".AspNet.Cookies" />
-                <option name="path" value="/" />
-                <option name="value" value="OLB3qRl4DBD6A7XHTZL-J_9htpvNOfNHXexEbvAwMTiTnpO2-pZe59oKNNkULakRr9kUEe3lHVpVxlPQPQn0dVqexBG7sRTEM8UXRmSgv2QKOz9nQrYekRwWuM757RyoUOWTGY4rs5Zk-ecW2EQMhzjmgbFNNhT92Guqd6L3cq7CDbIMCjajcvo84OGRGfhimhyBFgtYpHNcOiNkkP9aU-9Jj5z_SNPBPll4IJtJiFLfrUxJfZbHry5t6XmAynPDcDA7Agz6sVg-KYjIt8PBLGTn4OdlJjsvbKo5XXshUDUZYHASwavQkXA7i4S4AxKP7wQEJenpIIttJg498AKxd8GmthEz7lpmnRsCeBoq263q023LXhfT-bogrzrmYORZ4UCSltg9O-tnZLBp_FX8c_0NFTuGpIT6uPWy5xH1qjvICp59wZjc2BgbbFxr80fg" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://nbixman-001-site1.myasp.net" />
-          <option name="urlPath" value="api/UserInfo" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer PLjL4v4QmnLkjHAeN1Ri_lhwZwWdvEqDVhXIJFSNXTw9y8d8wPzn1U6DLwUWG_QNEkUb2MdigXs9-e6_ZgXGxLcPZVADjGDSMTLpSMMmd7DUDVIGYONCYRf4mt7k8R6Hmcz2hvFxUbLNCdv6CQOn1c4IK09MSrGz6kvvcrEMMqF7jF0FkvBUYO7Yifbb84wlTd5N1S7EQKALaqATbr0KQ08ZCeDkkMMCxqNpNL652zXybRsOdk2-IHnW1yIJaduyX4eN82JiJHPTTlRCp6VXzQ8yFeYm1-aGTbUy6Pp28qly-8AuY6D2meuIRC6uc0gWjlSixqxp3wQRa0b9cwpSNBLuvLL8tJflsRsFgDCcd-GkF61ETRn5ryGfMG8aqPxRkS9E2-41kV4oYmD9wsislLa2rQ8GrSSNdOxGOoqrV749cg7laukCYdK2Ezhqmaa5JGJZidw3sRBUZfp6uyyZmA" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="grant_type=password&amp;username=smth11&amp;password=smth11" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
-                <option name="path" value="/" />
-                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
-                <option name="path" value="/" />
-                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://nbixman-001-site1.myasp.net" />
-          <option name="urlPath" value="Token" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/x-www-form-urlencoded" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="grant_type=password&amp;username=smth11&amp;password=smth11" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
-                <option name="path" value="/" />
-                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
-                <option name="path" value="/" />
-                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://nbixman-001-site1.myasp.net" />
-          <option name="urlPath" value="Token" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/x-www-form-urlencoded" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="grant_type=password&amp;username=sandrik&amp;password=sandrik" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
-                <option name="path" value="/" />
-                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
-                <option name="path" value="/" />
-                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://nbixman-001-site1.myasp.net" />
-          <option name="urlPath" value="Token" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/x-www-form-urlencoded" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="grant_type=password&amp;username=123456&amp;password=123456" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
-                <option name="path" value="/" />
-                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
-                <option name="path" value="/" />
-                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://nbixman-001-site1.myasp.net" />
-          <option name="urlPath" value="Token" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/x-www-form-urlencoded" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="grant_type=password&amp;username=123456&amp;password=123456" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
-                <option name="path" value="/" />
-                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
-                <option name="path" value="/" />
-                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://nbixman-001-site1.myasp.net" />
-          <option name="urlPath" value="Token" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/x-www-form-urlencoded" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="grant_type=password&amp;username=sandrik&amp;password=sandrik" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
-                <option name="path" value="/" />
-                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
-                <option name="path" value="/" />
-                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://nbixman-001-site1.myasp.net" />
-          <option name="urlPath" value="Token" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/x-www-form-urlencoded" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="grant_type=password&amp;username=sandrik&amp;password=sandrik" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
-                <option name="path" value="/" />
-                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
-                <option name="path" value="/" />
-                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://nbixman-001-site1.myasp.net" />
-          <option name="urlPath" value="Token" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="grant_type=password&amp;username=sandrik&amp;password=sandrik" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
@@ -3244,10 +3272,14 @@
     <configuration default="false" name="login.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="login.js" working-dir="$PROJECT_DIR$/js/app/models">
       <method />
     </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -3255,10 +3287,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -3310,28 +3338,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4031496" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4031496" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -3355,40 +3383,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/app/layout/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7446" max-vertical-offset="7548">
-          <caret line="438" column="3" selection-start-line="438" selection-start-column="3" selection-end-line="438" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/app/controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="782" max-vertical-offset="2822">
-          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/app/feed/item_view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/app/header/view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="833">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <marker date="1419436573266" expanded="true" signature="803:863" placeholder="{&quot;change&quot;: &quot;update&quot;...}" />
-            <marker date="1419436573266" expanded="true" signature="893:941" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/app/header/model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="340">
@@ -3396,18 +3390,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="1428">
-          <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/app/layout/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3638" max-vertical-offset="3740">
           <caret line="214" column="3" selection-start-line="214" selection-start-column="3" selection-end-line="214" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3430,10 +3416,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="425">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <marker date="1419436573266" expanded="true" signature="803:863" placeholder="{&quot;change&quot;: &quot;update&quot;...}" />
-            <marker date="1419436573266" expanded="true" signature="893:941" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3444,13 +3426,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="1020">
-          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/font-awesome.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
@@ -3458,31 +3433,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/app/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6141215" vertical-offset="0" max-vertical-offset="3927">
-          <caret line="22" column="17" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/app/feed/tpl/no_entry.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/app/register/model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1165845" vertical-offset="0" max-vertical-offset="1054">
-          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -3619,20 +3573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72085387" vertical-offset="496" max-vertical-offset="1105">
-          <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="1428">
-          <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/app/controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="782" max-vertical-offset="2822">
@@ -3644,7 +3584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3139" max-vertical-offset="7548">
           <caret line="200" column="38" selection-start-line="200" selection-start-column="38" selection-end-line="200" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3652,10 +3591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="833">
           <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <marker date="1419436573266" expanded="true" signature="803:863" placeholder="{&quot;change&quot;: &quot;update&quot;...}" />
-            <marker date="1419436573266" expanded="true" signature="893:941" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3670,7 +3605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3681,26 +3615,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/perfect-scrollbar.scss">
+    <entry file="file://$PROJECT_DIR$/styles/scss/perfect-scrollbar.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="2006">
           <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3324" max-vertical-offset="10217">
-          <caret line="422" column="0" selection-start-line="422" selection-start-column="0" selection-end-line="422" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/app/feed/item_view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -3713,10 +3631,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/app/feed/item_view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/app/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/app/feed/layout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="612">
           <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26288658" vertical-offset="0" max-vertical-offset="582">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.94398683" vertical-offset="379" max-vertical-offset="1054">
+          <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -3729,10 +3679,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2800659" vertical-offset="0" max-vertical-offset="1105">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.26153848" vertical-offset="391" max-vertical-offset="816">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        <state vertical-scroll-proportion="-1.9615384" vertical-offset="51" max-vertical-offset="816">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/app/register/model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1054">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/scss/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8160">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="10217">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/core/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5415929" vertical-offset="0" max-vertical-offset="565">
+          <caret line="18" column="134912" selection-start-line="18" selection-start-column="134902" selection-end-line="18" selection-end-column="134912" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19604613" vertical-offset="0" max-vertical-offset="607">
+          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
           <folding />
         </state>
       </provider>
