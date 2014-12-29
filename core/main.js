@@ -23,7 +23,7 @@ require.config({
         marionette: 'plugins/backbone/marionette',
         jqueryui: 'plugins/jquery/jquery-ui',
         signalr: 'plugins/jquery/signalr',
-        signalrHubs: 'plugins/jquery/signalr/hubs?'
+        signalrHubs: 'http://icreate.azurewebsites.net/signalr/hubs?'
     },
 
     shim: {

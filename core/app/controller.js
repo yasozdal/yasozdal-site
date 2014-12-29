@@ -144,10 +144,10 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
         add: function() {
             if (sessionExists()) {
 
-                require(['add/view', 'event/model', 'common/location'], function (View, Model, LocationModel) {
+                require(['add/view', 'event/model'], function (View, Model) {
                     var view = new View({ templateHelpers: history , model: new Model() });
                     mainContent(view, function() {
-                        main.currentView.enableMarker(new LocationModel());
+                        main.currentView.enableMarker();
                     });
                 });
 

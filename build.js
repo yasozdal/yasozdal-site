@@ -9,11 +9,11 @@
 
     optimizeCss: "standard",
 
-    removeCombined: true,
+    removeCombined: true
 
-    modules: [
+    /* modules: [
         {
             name: "../main"
         }
-    ]
+    ] */
 })

@@ -85,11 +85,12 @@ define(['marionette', 'underscore', 'jquery', 'text!layout/main/main.html',
             });
         },
 
-        enableMarker: function(location) {
+        enableMarker: function() {
             var self = this;
             var pointer = this.content.currentView.ui.marker;
             var input = this.content.currentView.ui.location.get(0);
             var searchBox = new google.maps.places.SearchBox(input);
+            var geocoder = new google.maps.Geocoder();
 
             google.maps.event.addListener(searchBox, 'places_changed', function() {
                 var place = searchBox.getPlaces()[0].geometry.location;
@@ -163,7 +164,7 @@ define(['marionette', 'underscore', 'jquery', 'text!layout/main/main.html',
                     ui.draggable.remove();
 
 
-                    function update(lat, lng) {
+                    /*function update(lat, lng) {
                         var latLng = { Latitude: lat, Longitude: lng };
                         self.content.currentView.model.set(latLng);
 
@@ -171,6 +172,23 @@ define(['marionette', 'underscore', 'jquery', 'text!layout/main/main.html',
                             var result = location.get("results"), address;
                             if (location.get("status") === "OK") {
                                 address = result[0].formatted_address;
+                            } else {
+                                address = "У чёрта на куличиках!";
+                            }
+
+                            self.content.currentView.ui.location.val(address);
+                        });
+                    }
+
+                    */
+                    function update(lat, lng) {
+                        var latLng = new google.maps.LatLng(lat, lng);
+                        self.content.currentView.model.set({ Latitude: lat, Longitude: lng });
+                        geocoder.geocode({'latLng': latLng}, function(results, status) {
+                            var address;
+                            console.log(results);
+                            if (status == google.maps.GeocoderStatus.OK) {
+                                address = results[0].formatted_address;
                             } else {
                                 address = "У чёрта на куличиках!";
                             }
