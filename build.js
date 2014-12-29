@@ -1,7 +1,7 @@
 ({
     appDir: ".",
 
-    dir: "./build",
+    dir: "./release",
 
     mainConfigFile: 'core/main.js',
 
