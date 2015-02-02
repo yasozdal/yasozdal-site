@@ -8,3 +8,6 @@ npm-debug.log
 
 # SASS
 styles/scss/*.css
+
+# Mindmaps
+*.mm
