@@ -1,9 +1,9 @@
-define(['backbone', 'app/confiq'], function (Backbone, confiq) {
+define(['backbone', 'app/config'], function (Backbone, config) {
 
     'use strict';
 
     return Backbone.Model.extend({
-        url: conqiq.API + 'friends/',
+        url: config.API + 'friends/',
 
         follow: function(id) {
             this.fetch({url: this.url + 'follow/' + id});
