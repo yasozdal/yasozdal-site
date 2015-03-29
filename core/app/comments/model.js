@@ -1,15 +1,16 @@
-define(['backbone', 'app/config'], function (Backbone, confiq) {
+define(['backbone', 'app/config'], function (Backbone, config) {
 
     'use strict';
 
     return Backbone.Model.extend({
-        url: confiq.API + 'eventComments',
+        url: config.API + 'eventComments',
 
         defaults: {
             Latitude: '',
             Longitude: '',
             Description: '',
-            EventDate: ''
+            EventDate: '',
+            idEvent: ''
         },
 
         addComment: function() {

@@ -1,36 +1,34 @@
 define(['backbone', 'app/config'], function (Backbone, config) {
 
     'use strict';
+    const FRIENDS = 'm';
+    const FOLLOWING = 's';
+    const FOLLOWERS = 'f';
+    const FRIENDS_AND_FOLLOWING = 'mf';
+    const FRIENDS_AND_FOLLOWERS = 'ms';
 
     return Backbone.Collection.extend({
 
         url: config.API + 'friends/my/',
 
-
-        //more: function() {
-        //this.fetch({ remove: false, data: { count: 1, offset: this.length }, processData: true });
-        //   this.fetch({ data: { count: 1 + this.length }, processData: true });
-        //},
-        //},
-
         initialize: function() {
-            this.fetch({url : this.url + 'm'});
+            this.fetch({url : this.url + FRIENDS});
         },
 
         following: function() {
-            this.fetch({url : this.url + 's'});
+            this.fetch({url : this.url + FOLLOWING});
         },
 
         followers: function() {
-            this.fetch({url : this.url + 'f'});
+            this.fetch({url : this.url + FOLLOWERS});
         },
 
         mf: function() {
-            this.fetch({url : this.url + 'mf'});
+            this.fetch({url : this.url + FRIENDS_AND_FOLLOWING});
         },
 
         ms: function() {
-            this.fetch({url : this.url + 'ms'});
+            this.fetch({url : this.url + FRIENDS_AND_FOLLOWERS});
         }
 
     });
