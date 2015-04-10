@@ -1,5 +1,5 @@
-define(['backbone', 'marionette', 'app/router', 'app/controller',
-'session'], function (Backbone, Marionette, Router, Controller, session) {
+define(['jquery', 'backbone', 'marionette', 'app/router', 'app/controller',
+'session'], function ($, Backbone, Marionette, Router, Controller, session) {
 
     'use strict';
 
@@ -23,10 +23,10 @@ define(['backbone', 'marionette', 'app/router', 'app/controller',
                 options.type = 'POST';
             }
 
-            Backbone.originalSync(method, model, options);
+            return Backbone.originalSync(method, model, options);
         };
 
-        //у коллекций и композитов свой рендеринг... блин. ну композитов надо хотяб поправить
+        //у коллекций и композитов свой рендеринг остался тем не менее
         Marionette.ItemView.prototype.originalRender = Marionette.ItemView.prototype.render;
 
         Marionette.ItemView.prototype.render = function() {
@@ -36,10 +36,19 @@ define(['backbone', 'marionette', 'app/router', 'app/controller',
             result.$el = result.$el.children();
             result.$el.unwrap();
             result.setElement(result.$el);
-
             return result;
 
         };
+
+        $.fn.originalAppend = $.fn.append;
+
+        $.fn.append = function () {
+            return $.fn.originalAppend.apply(this, arguments).trigger("append");
+        };
+
+        session.on('logout', function() {
+            Backbone.history.navigate('/', { trigger: true });
+        });
 
         var router = new Router({ controller: new Controller({ main: app.mainRegion }) });
 

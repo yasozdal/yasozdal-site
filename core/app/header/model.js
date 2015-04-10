@@ -8,10 +8,6 @@ define(['backbone', 'app/config'], function (Backbone, config) {
 
         defaults: {
             UserName: ''
-        },
-
-        initialize: function() {
-            return this.fetch();
         }
 
     });

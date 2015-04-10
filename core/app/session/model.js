@@ -22,21 +22,18 @@ define(['backbone', 'json2', 'app/config'], function (Backbone, JSON, config) {
 
         defaults: {
             token: '',
-            expires: (new Date).getTime()
+            expires: ''
         },
 
         initialize: function() {
-            var session = JSON.parse(localStorage.getItem('session')), token = '';
+            var session = JSON.parse(localStorage.getItem('session')), token = '', expires= '';
 
-            if (session !== null) {
-                if (Date.parse(session.expires) > (new Date).getTime()) {
-                    token = '';
-                } else {
-                    token = session.token;
-                }
+            if (session !== null && !(Date.parse(session.expires) > (new Date).getTime())) {
+                token = session.token;
+                expires = session.expires;
             }
 
-            this.set({ token: token});
+            this.set({ token: token, expires_in: expires });
 
             this.on('change', this.save);
         },
@@ -52,18 +49,20 @@ define(['backbone', 'json2', 'app/config'], function (Backbone, JSON, config) {
             return this.get('token');
         },
 
+        setToken: function(token, expires_in) {
+            this.set({ token: token, expires: expires_in + (new Date).getTime() })
+        },
+
         login: function (options) {
             options.data = 'grant_type=password&username='
                 + options.UserName + '&password=' + options.Password;
-
-            //delete options.UserName;
-            //delete options.Password;
 
             this.fetch(options);
         },
 
         logout: function () {
             this.set({ token: '' });
+            this.trigger('logout');
         }
 
     });

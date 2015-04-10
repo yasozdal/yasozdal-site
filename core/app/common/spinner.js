@@ -5,7 +5,7 @@ define(['marionette'], function (Marionette) {
     return Marionette.Region.extend({
         attachHtml: function(view) {
             this.$el.empty().append(view.el);
-            this.$el.hide().slideDown('fast');
+            this.$el.hide().fadeIn();
         }
     });
 

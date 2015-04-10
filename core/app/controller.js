@@ -4,11 +4,11 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
 
     var main;
 
-    var history = { previous: 'feed', name: 'лента' };
+    var history = { previous: 'feed', name: 'ленту' };
 
     function mainContent (view, callback) {
 
-        callback = callback || function () {};
+        callback = callback || function() {};
 
         require(['layout/main'], function (Layout) {
             if (main.currentView instanceof Layout) {
@@ -16,13 +16,26 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
 
                 callback();
             } else {
-                require(['layout/main/maps', 'layout/main/collection', 'layout/main/model',
-                'header/view', 'header/model'], function (Map, Collection, Model, HeaderView, HeaderModel) {
-                    main.show(new Layout({ model: new Map(), collection: new Collection([], { model: Model }) }));
-                    main.currentView.header.show(new HeaderView({ model: new HeaderModel() }));
-                    main.currentView.content.show(view);
+                require(['layout/main/maps', 'events/collection', 'events/model', 'layout/main/marker_view', 'header/view',
+                'header/model'], function (Map, Collection, EventModel, MarkerView, HeaderView, HeaderModel) {
+                    main.show(new Layout({
+                        model: new Map(),
+                        collection: new Collection([], {
+                            model: EventModel,
+                            markerView: MarkerView
+                        })
+                    }));
 
-                    callback();
+                    var model = new HeaderModel();
+
+                    model.fetch({
+                        success: function() {
+                            main.currentView.header.show(new HeaderView({ model: model }));
+                            callback();
+                        }
+                    });
+
+                    main.currentView.content.show(view);
                 });
             }
         });
@@ -43,21 +56,37 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
             if (sessionExists()) {
                 Backbone.history.navigate('/feed', { trigger: true });
             } else {
-                require(['layout/home', 'login/view', 'register/view', 'login/model',
-                    'register/model'], function(Layout, LoginView, RegisterView, LoginModel, RegisterModel) {
+                require(['layout/home', 'login/view', 'register/view', 'external/view', 'login/model',
+                'register/model', 'external/model'], function(Layout, LoginView, RegisterView, ExternalView,
+                LoginModel, RegisterModel, ExternalModel) {
 
                     main.show(new Layout());
                     main.currentView.login.show(new LoginView({ model: new LoginModel() }));
                     main.currentView.register.show(new RegisterView({ model: new RegisterModel() }));
 
+                    var model = new ExternalModel();
+                    model.fetch({
+                        success: function() {
+                            main.currentView.external.show(new ExternalView({ model: model }));
+                        }
+                    });
+
                 });
             }
+        },
+
+        external: function(options) {
+            var params = options.match(/^_token=([A-z0-9_-]*).*expires_in=([0-9]*)/);
+            require(['session'], function(session) {
+                session.setToken(params[1], params[2]);
+                Backbone.history.navigate('/feed', { trigger:true });
+            });
         },
 
         feed: function () {
             if (sessionExists()) {
 
-                history = { previous: Backbone.history.fragment, name: 'лента' };
+                history = { previous: Backbone.history.fragment, name: 'ленту' };
 
                 require(['feed/layout', 'feed/collection_view',
                 'feed/item_view'], function (Layout, CollectionView, ItemView) {
@@ -68,10 +97,10 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
 
                         content.entries.show(new CollectionView({
                             collection: main.currentView.collection,
-                            //collection: new Collection([], { model: Model }),
-                            //возможно при очистке представления чистит модель (вряд ли)
                             childView: ItemView
                         }));
+
+                        main.currentView.enableEndlessScroll();
                     });
 
                 });
@@ -87,7 +116,9 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
 
                 require(['event/layout'], function (Layout) {
                     var view = new Layout({ templateHelpers: history });
-                    mainContent(view);
+                    mainContent(view, function() {
+                        main.currentView.header.currentView.dropup();
+                    });
                 });
 
             } else {
@@ -110,12 +141,14 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
             }
         },
 
-        new: function() {
+        add: function() {
             if (sessionExists()) {
 
-                require(['new/view', 'new/model'], function (View, Model) {
+                require(['add/view', 'event/model'], function (View, Model) {
                     var view = new View({ templateHelpers: history , model: new Model() });
-                    mainContent(view);
+                    mainContent(view, function() {
+                        main.currentView.enableMarker();
+                    });
                 });
 
             } else {

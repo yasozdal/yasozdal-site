@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="Azure">
+    <serverData>
+      <paths name="Azure">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/site/wwwroot/" local="$PROJECT_DIR$/release/" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/release/build.txt" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

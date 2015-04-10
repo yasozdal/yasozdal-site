@@ -1,5 +1,17 @@
 <div class="marker">
-    <img src="<%= User.Photo %>" /><br />
-    <a href="#event/<%= EventId %>">поподробней бы</a>
-    <%= User.UserName %>: <%= Description %>
+    <div class="userpic">
+        <img src="<%= User.Photo %>" />
+    </div>
+    <div class="userinfo">
+        <div class="username">
+            <a href="#<%= User.UserName %>" class="normal"><%= User.UserName %></a>
+        </div>
+        <div class="date-create"><%= DateCreate %></div>
+    </div>
+    <div style="clear: both"></div>
+    <div class="description">
+        <%= Description %>
+    </div>
+    <span class="info date"><i class="fa fa-clock-o fa-lg"></i><%= EventDate %></span>
+    <span class="more"><a href="#event/<%= EventId %>" class="normal">комментарии</a></span>
 </div>

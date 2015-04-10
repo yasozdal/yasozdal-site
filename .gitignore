@@ -1,0 +1,13 @@
+## Ignore temporary files and build results
+
+# Build results
+release/
+
+# NPM
+npm-debug.log
+
+# SASS
+styles/scss/*.css
+
+# Mindmaps
+*.mm
