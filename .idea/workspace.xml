@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="919604c3-c255-484a-9244-7230a928d378" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/app/external/tpl/view.html" afterPath="$PROJECT_DIR$/core/app/external/tpl/view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.js" afterPath="$PROJECT_DIR$/build.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/app/controller.js" afterPath="$PROJECT_DIR$/core/app/controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/scss/main.scss" afterPath="$PROJECT_DIR$/styles/scss/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/app/event/model.js" afterPath="$PROJECT_DIR$/core/app/event/model.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="yasozdal.iws" />
@@ -29,31 +30,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="collection.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/app/events/collection.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="969">
-              <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1105">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controller.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/app/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2228" max-vertical-offset="2822">
-              <caret line="149" column="54" selection-start-line="149" selection-start-column="54" selection-end-line="149" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.648531" vertical-offset="1937" max-vertical-offset="2856">
+              <caret line="149" column="36" selection-start-line="149" selection-start-column="36" selection-end-line="149" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/app/feed/layout.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="612">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spinner.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/app/common/spinner.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="289">
+              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="model.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/app/event/model.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="425">
+              <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -62,8 +73,18 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/app/layout/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3039" max-vertical-offset="7854">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2172" max-vertical-offset="7854">
               <caret line="200" column="0" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="816">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -72,18 +93,28 @@
       <file leaf-file-name="view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/app/external/tpl/view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="153">
-              <caret line="1" column="88" selection-start-line="1" selection-start-column="88" selection-end-line="1" selection-end-column="88" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="153">
+              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="layout.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/app/event/layout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
-              <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/app/add/view.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1734">
+              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -114,17 +145,18 @@
         <option value="$PROJECT_DIR$/build.json" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/styles/scss/main.css" />
-        <option value="$PROJECT_DIR$/styles/scss/main.scss" />
         <option value="$PROJECT_DIR$/release/build.txt" />
         <option value="$PROJECT_DIR$/release/core/main.js" />
         <option value="$PROJECT_DIR$/release/styles/jquery-ui.structure.css" />
         <option value="$PROJECT_DIR$/release/index.html" />
         <option value="$PROJECT_DIR$/core/main.js" />
-        <option value="$PROJECT_DIR$/build.js" />
-        <option value="$PROJECT_DIR$/core/app/controller.js" />
         <option value="$PROJECT_DIR$/core/app/layout/main.js" />
         <option value="$PROJECT_DIR$/core/app/external/tpl/view.html" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/build.js" />
+        <option value="$PROJECT_DIR$/core/app/event/model.js" />
+        <option value="$PROJECT_DIR$/styles/scss/main.scss" />
+        <option value="$PROJECT_DIR$/core/app/controller.js" />
       </list>
     </option>
   </component>
@@ -134,8 +166,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1378" />
-    <option name="height" value="744" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -218,7 +250,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="release" />
+              <option name="myItemId" value="styles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -251,6 +283,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yasozdal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yasozdal-site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yasozdal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yasozdal-site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feed" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -302,6 +378,120 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yasozdal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yasozdal-site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yasozdal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yasozdal-site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="event" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yasozdal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yasozdal-site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="event" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yasozdal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yasozdal-site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yasozdal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yasozdal-site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="add" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -312,8 +502,8 @@
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/release/build.txt" />
-    <property name="options.lastSelected" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Trash" />
+    <property name="options.lastSelected" value="Settings.JavaScript.Linters" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -359,6 +549,278 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
+                <option name="path" value="/" />
+                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
+                <option name="path" value="/" />
+                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="nbixman-001-site1.myasp.net" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="VPLKgGlKuH6UtqV8QEuFifS2ckNKuue_gYsvthwaZdsCt3nXBH0JZW7_I73ZmP2lDD4kzS2N70TJvO109JbMk_5UgR2AEjH0Rn1kWGrJxj17S9BveMIG2EQR-T-3WMZvsMxQiEupHmih52zqeSEAozWc5wX_GDislAyoz3OeVxE5k1YTEWEHUAq3VCbox-yAUlQdjMYW1v6o6czxI76V2gczf6uyDr3PrmuEmBgXV20THCS3py32gOTr5LtjkXg7DOrG6hQYPvV8KdmwJVSuiBihJBgfmdm2sJ_frpWPdCS-12HAGhlHIlCH9_SNGOCkqzwZEe5qea4x5D5T51wgem57Vnvqd986NMbKQACmUWZfVdJqvi-Ze53shSs7pALRIPhRUSb0agT1qTffkccyhFwfONgeY4kCCrKicDpD1O0zc0GCyRN2GiN_K5KR7fasNUIaHbn671tuU6oZgUVpsg" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="icreate.azurewebsites.net" />
+                <option name="name" value="ARRAffinity" />
+                <option name="path" value="/" />
+                <option name="value" value="4098b946e25125668ee1db6f55ce1f2af8f43e03571694fb3c80b6fb2531538a" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="kotlandia.ru" />
+                <option name="name" value="PHPSESSID" />
+                <option name="path" value="/" />
+                <option name="value" value="hol24bhi5p3hus4efas03blks3" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="kotlandia.ru" />
+                <option name="name" value="auth" />
+                <option name="path" value="/" />
+                <option name="value" value="3c06f2afe794339c9c6418e3cb0f41a3%7Chellosandrik%40gmail.com" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://kotlandia.ru" />
+          <option name="urlPath" value="/account/hero/characteristics.php" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{     &quot;action&quot;: &quot;strength&quot;,      &quot;strength_val&quot;: 5 }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
+                <option name="path" value="/" />
+                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
+                <option name="path" value="/" />
+                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="nbixman-001-site1.myasp.net" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="VPLKgGlKuH6UtqV8QEuFifS2ckNKuue_gYsvthwaZdsCt3nXBH0JZW7_I73ZmP2lDD4kzS2N70TJvO109JbMk_5UgR2AEjH0Rn1kWGrJxj17S9BveMIG2EQR-T-3WMZvsMxQiEupHmih52zqeSEAozWc5wX_GDislAyoz3OeVxE5k1YTEWEHUAq3VCbox-yAUlQdjMYW1v6o6czxI76V2gczf6uyDr3PrmuEmBgXV20THCS3py32gOTr5LtjkXg7DOrG6hQYPvV8KdmwJVSuiBihJBgfmdm2sJ_frpWPdCS-12HAGhlHIlCH9_SNGOCkqzwZEe5qea4x5D5T51wgem57Vnvqd986NMbKQACmUWZfVdJqvi-Ze53shSs7pALRIPhRUSb0agT1qTffkccyhFwfONgeY4kCCrKicDpD1O0zc0GCyRN2GiN_K5KR7fasNUIaHbn671tuU6oZgUVpsg" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="icreate.azurewebsites.net" />
+                <option name="name" value="ARRAffinity" />
+                <option name="path" value="/" />
+                <option name="value" value="4098b946e25125668ee1db6f55ce1f2af8f43e03571694fb3c80b6fb2531538a" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="kotlandia.ru" />
+                <option name="name" value="PHPSESSID" />
+                <option name="path" value="/" />
+                <option name="value" value="hol24bhi5p3hus4efas03blks3" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="kotlandia.ru" />
+                <option name="name" value="auth" />
+                <option name="path" value="/" />
+                <option name="value" value="3c06f2afe794339c9c6418e3cb0f41a3%7Chellosandrik%40gmail.com" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://kotlandia.ru" />
+          <option name="urlPath" value="/account/hero/characteristics" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{     &quot;action&quot;: &quot;strength&quot;,      &quot;strength_val&quot;: 5 }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
+                <option name="path" value="/" />
+                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
+                <option name="path" value="/" />
+                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="nbixman-001-site1.myasp.net" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="VPLKgGlKuH6UtqV8QEuFifS2ckNKuue_gYsvthwaZdsCt3nXBH0JZW7_I73ZmP2lDD4kzS2N70TJvO109JbMk_5UgR2AEjH0Rn1kWGrJxj17S9BveMIG2EQR-T-3WMZvsMxQiEupHmih52zqeSEAozWc5wX_GDislAyoz3OeVxE5k1YTEWEHUAq3VCbox-yAUlQdjMYW1v6o6czxI76V2gczf6uyDr3PrmuEmBgXV20THCS3py32gOTr5LtjkXg7DOrG6hQYPvV8KdmwJVSuiBihJBgfmdm2sJ_frpWPdCS-12HAGhlHIlCH9_SNGOCkqzwZEe5qea4x5D5T51wgem57Vnvqd986NMbKQACmUWZfVdJqvi-Ze53shSs7pALRIPhRUSb0agT1qTffkccyhFwfONgeY4kCCrKicDpD1O0zc0GCyRN2GiN_K5KR7fasNUIaHbn671tuU6oZgUVpsg" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="icreate.azurewebsites.net" />
+                <option name="name" value="ARRAffinity" />
+                <option name="path" value="/" />
+                <option name="value" value="4098b946e25125668ee1db6f55ce1f2af8f43e03571694fb3c80b6fb2531538a" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="kotlandia.ru" />
+                <option name="name" value="PHPSESSID" />
+                <option name="path" value="/" />
+                <option name="value" value="hol24bhi5p3hus4efas03blks3" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="kotlandia.ru" />
+                <option name="name" value="auth" />
+                <option name="path" value="/" />
+                <option name="value" value="3c06f2afe794339c9c6418e3cb0f41a3%7Chellosandrik%40gmail.com" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://kotlandia.ru" />
+          <option name="urlPath" value="/account/hero/characteristics" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;action&quot;: &quot;strength&quot;, &quot;strength_val&quot;: 5}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
+                <option name="path" value="/" />
+                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="member.mysitepanel.net" />
+                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
+                <option name="path" value="/" />
+                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="nbixman-001-site1.myasp.net" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="VPLKgGlKuH6UtqV8QEuFifS2ckNKuue_gYsvthwaZdsCt3nXBH0JZW7_I73ZmP2lDD4kzS2N70TJvO109JbMk_5UgR2AEjH0Rn1kWGrJxj17S9BveMIG2EQR-T-3WMZvsMxQiEupHmih52zqeSEAozWc5wX_GDislAyoz3OeVxE5k1YTEWEHUAq3VCbox-yAUlQdjMYW1v6o6czxI76V2gczf6uyDr3PrmuEmBgXV20THCS3py32gOTr5LtjkXg7DOrG6hQYPvV8KdmwJVSuiBihJBgfmdm2sJ_frpWPdCS-12HAGhlHIlCH9_SNGOCkqzwZEe5qea4x5D5T51wgem57Vnvqd986NMbKQACmUWZfVdJqvi-Ze53shSs7pALRIPhRUSb0agT1qTffkccyhFwfONgeY4kCCrKicDpD1O0zc0GCyRN2GiN_K5KR7fasNUIaHbn671tuU6oZgUVpsg" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="icreate.azurewebsites.net" />
+                <option name="name" value="ARRAffinity" />
+                <option name="path" value="/" />
+                <option name="value" value="4098b946e25125668ee1db6f55ce1f2af8f43e03571694fb3c80b6fb2531538a" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="kotlandia.ru" />
+                <option name="name" value="PHPSESSID" />
+                <option name="path" value="/" />
+                <option name="value" value="hol24bhi5p3hus4efas03blks3" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="kotlandia.ru" />
+                <option name="name" value="auth" />
+                <option name="path" value="/" />
+                <option name="value" value="3c06f2afe794339c9c6418e3cb0f41a3%7Chellosandrik%40gmail.com" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://kotlandia.ru" />
+          <option name="urlPath" value="/account/hero/characteristics" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   'action': 'strength',   'strength_val': 5 }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="biscuits">
             <list>
@@ -3034,226 +3496,6 @@
           <option name="textToSend" value="{UserName:&quot;sandrik&quot;,Password:&quot;sandrik&quot;,ConfirmPassword:&quot;sandrik&quot;}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
-                <option name="path" value="/" />
-                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
-                <option name="path" value="/" />
-                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="nbixman-001-site1.myasp.net" />
-                <option name="name" value=".AspNet.Cookies" />
-                <option name="path" value="/" />
-                <option name="value" value="OLB3qRl4DBD6A7XHTZL-J_9htpvNOfNHXexEbvAwMTiTnpO2-pZe59oKNNkULakRr9kUEe3lHVpVxlPQPQn0dVqexBG7sRTEM8UXRmSgv2QKOz9nQrYekRwWuM757RyoUOWTGY4rs5Zk-ecW2EQMhzjmgbFNNhT92Guqd6L3cq7CDbIMCjajcvo84OGRGfhimhyBFgtYpHNcOiNkkP9aU-9Jj5z_SNPBPll4IJtJiFLfrUxJfZbHry5t6XmAynPDcDA7Agz6sVg-KYjIt8PBLGTn4OdlJjsvbKo5XXshUDUZYHASwavQkXA7i4S4AxKP7wQEJenpIIttJg498AKxd8GmthEz7lpmnRsCeBoq263q023LXhfT-bogrzrmYORZ4UCSltg9O-tnZLBp_FX8c_0NFTuGpIT6uPWy5xH1qjvICp59wZjc2BgbbFxr80fg" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://nbixman-001-site1.myasp.net" />
-          <option name="urlPath" value="api/Events" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer BSWhvXqg7SR2ynL9TX__YOfY8SABLCxCfCBytv-BE5fj5Ty_1xMeNTgR6ct0jaYdHSNvObffW0ZfodGm6cb4CtlXnq7VBEWKbY072CoZih3-Tw4Lm2Vwbc58FFsvb7xc2vg2zTCoEBHFmE_RULDuJD3fU-aWDqPG615NWeAfpvkGRuW1EObUpwLJODlnXTIUbNcHRlCY1MAYuGqnEKRNH3a1u2VJsnLUTfL72YEYniQozqVklrxx2jXBXnz32xfBy_uI6RdcZBfEsyShwildohH4cLeqo4VQ00V_H8EJGVRiib26Jx53w-A7U5u8czIa0jZHPa_9CFH3B5LgeiIVS5TxEK17BgZgE0KlsA6BcJA6JyX39OA2MIo5Yl5cECjfoTqoVnPGEFjD7mV7Qn1i2FyTf4LRIfIpOD8wZ33Ngd3duczm25ACNFsjN6dh-Pza5A8s4hNbLKJonUrGanOhPA" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="{UserName:&quot;sandrik&quot;,Password:&quot;sandrik&quot;,ConfirmPassword:&quot;sandrik&quot;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
-                <option name="path" value="/" />
-                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
-                <option name="path" value="/" />
-                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="nbixman-001-site1.myasp.net" />
-                <option name="name" value=".AspNet.Cookies" />
-                <option name="path" value="/" />
-                <option name="value" value="OLB3qRl4DBD6A7XHTZL-J_9htpvNOfNHXexEbvAwMTiTnpO2-pZe59oKNNkULakRr9kUEe3lHVpVxlPQPQn0dVqexBG7sRTEM8UXRmSgv2QKOz9nQrYekRwWuM757RyoUOWTGY4rs5Zk-ecW2EQMhzjmgbFNNhT92Guqd6L3cq7CDbIMCjajcvo84OGRGfhimhyBFgtYpHNcOiNkkP9aU-9Jj5z_SNPBPll4IJtJiFLfrUxJfZbHry5t6XmAynPDcDA7Agz6sVg-KYjIt8PBLGTn4OdlJjsvbKo5XXshUDUZYHASwavQkXA7i4S4AxKP7wQEJenpIIttJg498AKxd8GmthEz7lpmnRsCeBoq263q023LXhfT-bogrzrmYORZ4UCSltg9O-tnZLBp_FX8c_0NFTuGpIT6uPWy5xH1qjvICp59wZjc2BgbbFxr80fg" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://nbixman-001-site1.myasp.net" />
-          <option name="urlPath" value="api/Event/2" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer BSWhvXqg7SR2ynL9TX__YOfY8SABLCxCfCBytv-BE5fj5Ty_1xMeNTgR6ct0jaYdHSNvObffW0ZfodGm6cb4CtlXnq7VBEWKbY072CoZih3-Tw4Lm2Vwbc58FFsvb7xc2vg2zTCoEBHFmE_RULDuJD3fU-aWDqPG615NWeAfpvkGRuW1EObUpwLJODlnXTIUbNcHRlCY1MAYuGqnEKRNH3a1u2VJsnLUTfL72YEYniQozqVklrxx2jXBXnz32xfBy_uI6RdcZBfEsyShwildohH4cLeqo4VQ00V_H8EJGVRiib26Jx53w-A7U5u8czIa0jZHPa_9CFH3B5LgeiIVS5TxEK17BgZgE0KlsA6BcJA6JyX39OA2MIo5Yl5cECjfoTqoVnPGEFjD7mV7Qn1i2FyTf4LRIfIpOD8wZ33Ngd3duczm25ACNFsjN6dh-Pza5A8s4hNbLKJonUrGanOhPA" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="{UserName:&quot;sandrik&quot;,Password:&quot;sandrik&quot;,ConfirmPassword:&quot;sandrik&quot;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
-                <option name="path" value="/" />
-                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
-                <option name="path" value="/" />
-                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="nbixman-001-site1.myasp.net" />
-                <option name="name" value=".AspNet.Cookies" />
-                <option name="path" value="/" />
-                <option name="value" value="OLB3qRl4DBD6A7XHTZL-J_9htpvNOfNHXexEbvAwMTiTnpO2-pZe59oKNNkULakRr9kUEe3lHVpVxlPQPQn0dVqexBG7sRTEM8UXRmSgv2QKOz9nQrYekRwWuM757RyoUOWTGY4rs5Zk-ecW2EQMhzjmgbFNNhT92Guqd6L3cq7CDbIMCjajcvo84OGRGfhimhyBFgtYpHNcOiNkkP9aU-9Jj5z_SNPBPll4IJtJiFLfrUxJfZbHry5t6XmAynPDcDA7Agz6sVg-KYjIt8PBLGTn4OdlJjsvbKo5XXshUDUZYHASwavQkXA7i4S4AxKP7wQEJenpIIttJg498AKxd8GmthEz7lpmnRsCeBoq263q023LXhfT-bogrzrmYORZ4UCSltg9O-tnZLBp_FX8c_0NFTuGpIT6uPWy5xH1qjvICp59wZjc2BgbbFxr80fg" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://nbixman-001-site1.myasp.net" />
-          <option name="urlPath" value="api/Events/2" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer BSWhvXqg7SR2ynL9TX__YOfY8SABLCxCfCBytv-BE5fj5Ty_1xMeNTgR6ct0jaYdHSNvObffW0ZfodGm6cb4CtlXnq7VBEWKbY072CoZih3-Tw4Lm2Vwbc58FFsvb7xc2vg2zTCoEBHFmE_RULDuJD3fU-aWDqPG615NWeAfpvkGRuW1EObUpwLJODlnXTIUbNcHRlCY1MAYuGqnEKRNH3a1u2VJsnLUTfL72YEYniQozqVklrxx2jXBXnz32xfBy_uI6RdcZBfEsyShwildohH4cLeqo4VQ00V_H8EJGVRiib26Jx53w-A7U5u8czIa0jZHPa_9CFH3B5LgeiIVS5TxEK17BgZgE0KlsA6BcJA6JyX39OA2MIo5Yl5cECjfoTqoVnPGEFjD7mV7Qn1i2FyTf4LRIfIpOD8wZ33Ngd3duczm25ACNFsjN6dh-Pza5A8s4hNbLKJonUrGanOhPA" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="{UserName:&quot;sandrik&quot;,Password:&quot;sandrik&quot;,ConfirmPassword:&quot;sandrik&quot;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQQARBAQQ" />
-                <option name="path" value="/" />
-                <option name="value" value="NAFJPOIBMAMKNPMCCGEOBLDA" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="member.mysitepanel.net" />
-                <option name="name" value="ASPSESSIONIDQSCTCAQR" />
-                <option name="path" value="/" />
-                <option name="value" value="BDDGJNGAJPPHEANFGFIONJJM" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="nbixman-001-site1.myasp.net" />
-                <option name="name" value=".AspNet.Cookies" />
-                <option name="path" value="/" />
-                <option name="value" value="OLB3qRl4DBD6A7XHTZL-J_9htpvNOfNHXexEbvAwMTiTnpO2-pZe59oKNNkULakRr9kUEe3lHVpVxlPQPQn0dVqexBG7sRTEM8UXRmSgv2QKOz9nQrYekRwWuM757RyoUOWTGY4rs5Zk-ecW2EQMhzjmgbFNNhT92Guqd6L3cq7CDbIMCjajcvo84OGRGfhimhyBFgtYpHNcOiNkkP9aU-9Jj5z_SNPBPll4IJtJiFLfrUxJfZbHry5t6XmAynPDcDA7Agz6sVg-KYjIt8PBLGTn4OdlJjsvbKo5XXshUDUZYHASwavQkXA7i4S4AxKP7wQEJenpIIttJg498AKxd8GmthEz7lpmnRsCeBoq263q023LXhfT-bogrzrmYORZ4UCSltg9O-tnZLBp_FX8c_0NFTuGpIT6uPWy5xH1qjvICp59wZjc2BgbbFxr80fg" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://nbixman-001-site1.myasp.net" />
-          <option name="urlPath" value="api/Events/2" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer BSWhvXqg7SR2ynL9TX__YOfY8SABLCxCfCBytv-BE5fj5Ty_1xMeNTgR6ct0jaYdHSNvObffW0ZfodGm6cb4CtlXnq7VBEWKbY072CoZih3-Tw4Lm2Vwbc58FFsvb7xc2vg2zTCoEBHFmE_RULDuJD3fU-aWDqPG615NWeAfpvkGRuW1EObUpwLJODlnXTIUbNcHRlCY1MAYuGqnEKRNH3a1u2VJsnLUTfL72YEYniQozqVklrxx2jXBXnz32xfBy_uI6RdcZBfEsyShwildohH4cLeqo4VQ00V_H8EJGVRiib26Jx53w-A7U5u8czIa0jZHPa_9CFH3B5LgeiIVS5TxEK17BgZgE0KlsA6BcJA6JyX39OA2MIo5Yl5cECjfoTqoVnPGEFjD7mV7Qn1i2FyTf4LRIfIpOD8wZ33Ngd3duczm25ACNFsjN6dh-Pza5A8s4hNbLKJonUrGanOhPA" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="count" />
-                <option name="value" value="2" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="{UserName:&quot;sandrik&quot;,Password:&quot;sandrik&quot;,ConfirmPassword:&quot;sandrik&quot;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
@@ -3276,10 +3518,14 @@
     <configuration default="false" name="login.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="login.js" working-dir="$PROJECT_DIR$/js/app/models">
       <method />
     </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -3287,10 +3533,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -3339,10 +3581,17 @@
       <option name="number" value="Default" />
       <updated>1414021478636</updated>
     </task>
+    <task id="LOCAL-00001" summary="README cleared">
+      <created>1422908504285</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1422908504285</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3350,8 +3599,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19530103" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24889868" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13802083" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17604166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -3360,10 +3611,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4031496" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41491085" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -3383,6 +3633,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="README cleared" />
+    <option name="LAST_COMMIT_MESSAGE" value="README cleared" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3397,38 +3649,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1105">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/app/controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2228" max-vertical-offset="2822">
-          <caret line="149" column="54" selection-start-line="149" selection-start-column="54" selection-end-line="149" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/app/layout/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3039" max-vertical-offset="7854">
-          <caret line="200" column="0" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/app/external/tpl/view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/app/layout/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3638" max-vertical-offset="3740">
@@ -3499,24 +3719,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/app/event/model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="41" max-vertical-offset="425">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/app/session/model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1292">
           <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1122">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -3531,13 +3737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/app/event/tpl/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="153">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -3566,13 +3765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="221">
           <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/app/common/spinner.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -3667,31 +3859,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/app/feed/layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="612">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26288658" vertical-offset="0" max-vertical-offset="582">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/scss/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="10217">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/scss/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8160">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -3702,25 +3873,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14206128" vertical-offset="51" max-vertical-offset="816">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/app/events/collection.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
           <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3090909" vertical-offset="0" max-vertical-offset="408">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -3732,37 +3888,148 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/app/controller.js">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2354" max-vertical-offset="2822">
-          <caret line="149" column="54" selection-start-line="149" selection-start-column="54" selection-end-line="149" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/app/layout/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3039" max-vertical-offset="7854">
-          <caret line="200" column="0" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
+          <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/app/external/tpl/view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="153">
-          <caret line="1" column="88" selection-start-line="1" selection-start-column="88" selection-end-line="1" selection-end-column="88" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="153">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/core/app/event/tpl/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
-          <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.05711086" vertical-offset="0" max-vertical-offset="893">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/app/event/layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="919">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/app/add/view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1734">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/release/build.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="919">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12948857" vertical-offset="0" max-vertical-offset="919">
+          <caret line="7" column="73" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/app/layout/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2172" max-vertical-offset="7854">
+          <caret line="200" column="0" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/scss/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.447191" vertical-offset="6844" max-vertical-offset="8194">
+          <caret line="426" column="2" selection-start-line="426" selection-start-column="2" selection-end-line="426" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3726852" vertical-offset="5764" max-vertical-offset="10251">
+          <caret line="358" column="10" selection-start-line="358" selection-start-column="10" selection-end-line="358" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="816">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/app/event/model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/app/common/location.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="919">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/app/common/spinner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/app/feed/layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="1122">
+          <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/app/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.648531" vertical-offset="1937" max-vertical-offset="2856">
+          <caret line="149" column="36" selection-start-line="149" selection-start-column="36" selection-end-line="149" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

@@ -356,6 +356,7 @@ a.normal:hover {
 
 #new-event input[type=submit]:hover {
   background-color: #e74c3c;
+  cursor: pointer;
 }
 
 #new-event input[type=submit]:active,
@@ -538,6 +539,7 @@ img.coming-soon {
 
 .auth input[type=submit]:hover {
   background-color: #e74c3c;
+  cursor: pointer;
 }
 
 .auth input:active,

@@ -5,15 +5,9 @@
 
     mainConfigFile: 'core/main.js',
 
-    fileExclusionRegExp: /^(r|build)\.js|\.idea|.*\.md|\.git.*|.*\.log$/,
+    fileExclusionRegExp: /^(r|build)\.js|\.idea|.*\.md|\.git.*|.*\.log|.*\.scss$/,
 
     optimizeCss: "standard",
 
     removeCombined: true
-
-    /* modules: [
-        {
-            name: "../main"
-        }
-    ] */
 })
