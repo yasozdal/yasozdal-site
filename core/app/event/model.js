@@ -1,4 +1,4 @@
-define(['backbone', 'app//config'], function (Backbone, config) {
+define(['backbone', 'app/config'], function (Backbone, config) {
 
     'use strict';
 
@@ -11,7 +11,7 @@ define(['backbone', 'app//config'], function (Backbone, config) {
             Latitude: '',
             Longitude: '',
             Description: '',
-            EventDate: '', //ddd, dd MMM yyyy HH:mm:ss GMT
+            EventDate: '',
             CategoryId: '',
             PhotoIds: []
         }
