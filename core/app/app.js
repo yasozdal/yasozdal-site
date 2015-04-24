@@ -46,6 +46,7 @@ define(['jquery', 'backbone', 'marionette', 'app/router', 'app/controller',
             return $.fn.originalAppend.apply(this, arguments).trigger("append");
         };
 
+        //место ли здесь этому?
         session.on('logout', function() {
             Backbone.history.navigate('/', { trigger: true });
         });
