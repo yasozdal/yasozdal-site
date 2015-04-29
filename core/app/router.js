@@ -10,6 +10,10 @@ define(['marionette'], function (Marionette) {
             "add": "add",
             "event/:id": "event",
             "access:options": "external",
+            "friends": "friends",
+            "talks": "talks",
+            "coffee": "coffee",
+            "settings": "settings",
             ":username": "profile"
         }
 

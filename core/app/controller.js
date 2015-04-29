@@ -17,7 +17,7 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
                 callback();
             } else {
                 require(['layout/main/maps', 'events/collection', 'events/model', 'layout/main/marker_view', 'header/view',
-                'header/model'], function (Map, Collection, EventModel, MarkerView, HeaderView, HeaderModel) {
+                    'header/model'], function (Map, Collection, EventModel, MarkerView, HeaderView, HeaderModel) {
                     main.show(new Layout({
                         model: new Map(),
                         collection: new Collection([], {
@@ -55,6 +55,13 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
         } else {
             options.missing(); //если пользователь НЕ авторизован
         }
+    }
+
+    function EmptyPage() {
+        require(['empty/view'], function (View) {
+            var view = new View({});
+            mainContent(view);
+        });
     }
 
     return Marionette.Controller.extend({
@@ -154,6 +161,38 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
                             main.currentView.enableMarker();
                         });
                     });
+                }
+            });
+        },
+
+        friends: function() {
+            sessionAction({
+                exists: function() {
+                    EmptyPage();
+                }
+            });
+        },
+
+        talks: function() {
+            sessionAction({
+                exists: function() {
+                    EmptyPage();
+                }
+            });
+        },
+
+        coffee: function() {
+            sessionAction({
+                exists: function() {
+                    EmptyPage();
+                }
+            });
+        },
+
+        settings: function() {
+            sessionAction({
+                exists: function() {
+                    EmptyPage();
                 }
             });
         }
