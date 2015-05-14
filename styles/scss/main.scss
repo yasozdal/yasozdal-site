@@ -12,7 +12,7 @@ button, input, select, textarea {
 }
 ::-webkit-input-placeholder {
   font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
-  font-size: 12px;
+  font-size: 13px;
 }
 :-moz-placeholder {
   font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
@@ -308,6 +308,17 @@ a.normal:hover {
   border-bottom: 1px #000 dotted;
 }
 
+a.header {
+  color: #fff;
+  cursor: pointer;
+  border-bottom-style: none;
+}
+
+a.header:hover {
+  border-bottom-style: none;
+  color: #000;
+}
+
 #new-event {
   padding: 5px 15px 10px 10px;
 }
@@ -356,7 +367,6 @@ a.normal:hover {
 
 #new-event input[type=submit]:hover {
   background-color: #e74c3c;
-  cursor: pointer;
 }
 
 #new-event input[type=submit]:active,
@@ -539,7 +549,6 @@ img.coming-soon {
 
 .auth input[type=submit]:hover {
   background-color: #e74c3c;
-  cursor: pointer;
 }
 
 .auth input:active,
@@ -595,4 +604,114 @@ input:-webkit-autofill {
 
 .auth #external a:hover {
   border-bottom: none;
+}
+
+.profile {
+  padding: 10px 15px 5px 10px;
+  transition: background-color 0.5s ease;
+}
+
+.profile .border-helper {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.profile .userpic {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 40px;
+  width: 40px;
+  float: left;
+}
+
+.profile .userpic img {
+  height: 40px;
+  width: 41px;
+}
+
+.profile .userinfo {
+  margin: 0px 0px 0px 45px;
+  position: relative;
+  top: 5px;
+  color: #c0392b;
+}
+
+.profile .username {
+  font-size: 14px;
+}
+
+.profile .mates {
+  color: #c0392b;
+}
+
+.profile .followers {
+  position: relative;
+  color: #c0392b;
+  width: 100px;
+  display: inline-block;
+  margin: 0px 0px 5px 0px;
+}
+
+.profile .following {
+  float: right;
+  color: #c0392b;
+}
+
+.profile .add {
+  color: #c0392b;
+  float: right;
+  margin: 0px 0px 10px 0px;
+  font-size: 12px;
+}
+
+.profile .link {
+  cursor: pointer;
+}
+
+.profile .link:hover {
+  color: #e74c3c;
+}
+
+.friend {
+  padding: 10px 15px 5px 10px;
+  transition: background-color 0.5s ease;
+}
+
+.friend .border-helper {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.friend .userpic {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 40px;
+  width: 40px;
+  float: left;
+}
+
+.friend .userpic img {
+  height: 40px;
+  width: 41px;
+}
+
+.friend .userinfo {
+  margin: 0px 0px 0px 45px;
+  position: relative;
+  top: 5px;
+  color: #c0392b;
+}
+
+.friend .username {
+  font-size: 14px;
+}
+
+.friend .link {
+  cursor: pointer;
+  color: #c0392b;
+  float: right;
+  margin: 0px 0px 10px 0px;
+  font-size: 12px;
+}
+
+.friend .link:hover {
+  color: #e74c3c;
 }

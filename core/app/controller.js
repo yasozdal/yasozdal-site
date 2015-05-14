@@ -139,14 +139,49 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
             });
         },
 
-        profile: function(username) {
+        profile: function(userid) {
             sessionAction({
                 exists: function() {
-                    history = { previous: Backbone.history.fragment, name: 'облачко' };
+                    require(['profile/view', 'profile/model', 'friend/collection', 'header/model'],
+                    function (View, Model, FriendCollection, Header) {
+                        var model = new Model({ UserId: userid});
+                        var collection = new FriendCollection();
+                        var header = new Header();
 
-                    require(['profile/view', 'profile/model'], function (View, Model) {
-                        var view = new View({ model: new Model({ username: username }) });
-                        mainContent(view);
+                        header.fetch({
+                            success: function () {
+                                collection.followers(userid, function () {
+                                    if (userid == header.get('UserId')){
+                                        model.set("is_following", 0);
+                                    }
+                                    else {
+                                        if (collection.findWhere({UserId: parseInt(header.get("UserId"))})) {
+                                            model.set("is_following", 1);
+                                        }
+                                        else {
+                                            model.set("is_following", 2);
+                                        }
+                                    }
+
+                                });
+
+                                model.set("Followers", collection.length);
+
+                                collection.mates(userid, function(){
+                                    model.set("Mates", collection.length);
+
+                                    collection.following(userid, function(){
+                                        model.set("Following", collection.length);
+
+                                        model.info(function() {
+                                            var view = new View({ templateHelpers: history, model: model});
+                                            mainContent(view);
+                                        });
+                                    });
+                                });
+                            }
+                        });
+
                     });
                 }
             });
@@ -168,7 +203,23 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
         friends: function() {
             sessionAction({
                 exists: function() {
-                    EmptyPage();
+                    require(['friends/collection_view', 'friends/item_view', 'friend/collection',
+                        'friends/empty_view'],
+                    function (CollectionView, ItemView, CollectionModel, EmptyView) {
+                        var collection = new CollectionModel();
+
+                        collection.mates(38, function() {
+                            if (collection.length > 0){
+                                mainContent(new CollectionView({
+                                    collection: collection,
+                                    childView: ItemView
+                                }));
+                            } else {
+                                mainContent(new EmptyView());
+                            }
+
+                        });
+                    });
                 }
             });
         },

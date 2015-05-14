@@ -13,8 +13,8 @@ define(['backbone', 'plugins/date'], function (Backbone) {
             }
 
             //yyyy-MM-ddThh:mm:ss
-            var eventDate = Date.parse(response.EventDate);
-            var dateCreate = Date.parse(response.DateCreate);
+            var eventDate = Date.parse(response.EventDate.slice(0, -1));
+            var dateCreate = Date.parse(response.DateCreate.slice(0, -1));
             response.EventDate = eventDate.toString("dd MMM HH:mm");
             response.DateCreate = dateCreate.toString("dd MMM HH:mm");
             response.Location = 'У чёрта на куличиках!';

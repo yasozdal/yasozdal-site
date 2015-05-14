@@ -16,7 +16,7 @@ define(['marionette', 'underscore', 'text!layout/home/home.html'], function (Mar
         regions: {
             login: "#login",
             register: "#register",
-            external: "#external",
+            external: "#external"
         },
 
         events: {

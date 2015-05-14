@@ -1,14 +1,18 @@
-define(['marionette', 'underscore', 'text!profile/tpl/profile.html', 'friend/model'],
+define(['marionette', 'underscore', 'text!friends/tpl/friend.html', 'friend/model'],
     function (Marionette, _, mainTemplate, Model) {
 
     'use strict';
 
     return Marionette.ItemView.extend({
+
         template: _.template(mainTemplate),
 
         ui: {
             button_unfollow: '.unfollow',
-            button_follow: '.follow'
+            button_follow: '.follow',
+            cancel: '.cancel',
+            userinfo: '.userinfo',
+            userpic: 'userpic'
         },
 
         events: {
@@ -20,33 +24,23 @@ define(['marionette', 'underscore', 'text!profile/tpl/profile.html', 'friend/mod
             var model = new Model();
             model.unfollow(this.model.get("UserId"));
             this.ui.button_unfollow.hide();
-            this.ui.button_follow.show();
+            this.ui.userpic.hide();
+            this.ui.userinfo.hide();
+            this.ui.cancel.show();
         },
 
         follow: function() {
             var model = new Model();
             model.follow(this.model.get("UserId"));
-            this.ui.button_follow.hide();
             this.ui.button_unfollow.show();
+            this.ui.userpic.show();
+            this.ui.userinfo.show();
+            this.ui.cancel.hide();
         },
 
-        onRender: function () {
-            var is_following = this.model.get('is_following');
-
-            if (is_following == 0) {
-                this.ui.button_follow.hide();
-                this.ui.button_unfollow.hide();
-            } else {
-                if (is_following == 1){
-                    this.ui.button_follow.hide();
-                }
-                else {
-                    this.ui.button_unfollow.hide();
-                }
-            }
+        onRender: function() {
+            this.ui.cancel.hide();
         }
-
-
     });
 
 });
