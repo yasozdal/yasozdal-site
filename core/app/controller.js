@@ -208,7 +208,7 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
                     function (CollectionView, ItemView, CollectionModel, EmptyView) {
                         var collection = new CollectionModel();
 
-                        collection.mates(38, function() {
+                        collection.mates(null, function() {
                             if (collection.length > 0){
                                 mainContent(new CollectionView({
                                     collection: collection,
