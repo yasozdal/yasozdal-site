@@ -17,12 +17,6 @@ define(['backbone', 'app/config', 'session'], function (Backbone, config, sessio
             Backbone.originalSync(method, model, options);
         },
 
-        /*defaults: {
-         UserName: '',
-         Email: '',
-         Password: ''
-         },*/
-
         defaults: {
             UserName: '',
             Password: '',
@@ -30,7 +24,6 @@ define(['backbone', 'app/config', 'session'], function (Backbone, config, sessio
         },
 
         initialize: function() {
-            this.on('change', this.register);
             this.listenTo(session, 'sync', this.logged);
         },
 
@@ -38,17 +31,7 @@ define(['backbone', 'app/config', 'session'], function (Backbone, config, sessio
             this.trigger('logged');
         },
 
-        /*parse: function(response) {
-            if (JSON.stringify(response).length > 0) {
-                return response;
-            } else {
-                return {};
-            }
-        },*/
-
         register: function() {
-            var self = this;
-            // когда сервер начнет возвращать пустой объект, все будет ок!
             this.save(this.attributes, { success: function() { session.login(self.attributes); } });
         }
 

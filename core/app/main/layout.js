@@ -1,6 +1,6 @@
-define(['marionette', 'underscore', 'jquery', 'text!layout/main/main.html',
-'text!layout/main/marker.html', 'common/spinner', 'session', 'async!gmaps', 'jqueryui',
-'plugins/jquery/perfect-scrollbar'], function (Marionette, _, $, mainTemplate, markerTemplate, Spinner, session) {
+define(['marionette', 'underscore', 'jquery', 'text!main/tpl/layout.html',
+'text!main/tpl/marker_view.html', 'common/fade_region', 'session', 'async!gmaps', 'jqueryui',
+'plugins/jquery/perfect-scrollbar'], function (Marionette, _, $, mainTemplate, markerTemplate, Fade, session) {
 
     'use strict';
 
@@ -22,6 +22,27 @@ define(['marionette', 'underscore', 'jquery', 'text!layout/main/main.html',
 
     var minimumDistance = 0.003; //in km
 
+    var opts = {
+        lines: 13,
+        length: 15,
+        width: 7,
+        radius: 40,
+        corners: 1,
+        rotate: 0,
+        direction: 1,
+        color: '#ffffff',
+        speed: 1,
+        trail: 60,
+        shadow: false,
+        hwaccel: false,
+        className: 'spinner',
+        zIndex: 2e9,
+        top: '50%',
+        left: '50%'
+    };
+
+    var spinner = new Spinner(opts);
+
     return Marionette.LayoutView.extend({
 
         template: _.template(mainTemplate),
@@ -29,7 +50,7 @@ define(['marionette', 'underscore', 'jquery', 'text!layout/main/main.html',
         regions: {
             header: "#header",
             content: {
-                regionClass: Spinner,
+                regionClass: Fade,
                 selector: "#content"
             }
         },
@@ -39,13 +60,28 @@ define(['marionette', 'underscore', 'jquery', 'text!layout/main/main.html',
         },
 
         initialize: function(options) {
+            var self = this;
+
             this.map = null;
             this.markers = [];
-            this.markerView = options.markerView;
+            this.mapIdlePromise = new $.Deferred();
 
-            this.listenTo(this.content, 'show', this.updateSidebar);
-            this.listenTo(this.content, 'show', this.contentScroll);
+            $.when(this.mapIdlePromise, options.headerPromise).done(function() {
+                self.trigger("ready");
+                spinner.stop();
+                self.$("#loader").remove();
+            });
+
+            this.listenTo(this.content, 'show', this.contentEvents);
             this.listenTo(this.header, 'show', this.headerEvents);
+            this.listenTo(this.collection, 'navigated', this.centerMap);
+        },
+
+        contentEvents: function () {
+            this.updateSidebar();
+            this.contentScroll();
+
+            this.listenTo(this.content.currentView, 'navigated', this.centerMap);
         },
 
         headerEvents: function() {
@@ -83,6 +119,10 @@ define(['marionette', 'underscore', 'jquery', 'text!layout/main/main.html',
             this.listenTo(this.content.currentView, 'destroy', function() {
                 scrollBlock.off('scroll', endlessScroll);
             });
+        },
+
+        centerMap: function(options) {
+            this.map.setCenter(new google.maps.LatLng(options.lat, options.lng));
         },
 
         enableMarker: function() {
@@ -163,30 +203,12 @@ define(['marionette', 'underscore', 'jquery', 'text!layout/main/main.html',
                     ui.helper.remove();
                     ui.draggable.remove();
 
-
-                    /*function update(lat, lng) {
-                        var latLng = { Latitude: lat, Longitude: lng };
-                        self.content.currentView.model.set(latLng);
-
-                        location.geocoding(latLng).done(function() {
-                            var result = location.get("results"), address;
-                            if (location.get("status") === "OK") {
-                                address = result[0].formatted_address;
-                            } else {
-                                address = "У чёрта на куличиках!";
-                            }
-
-                            self.content.currentView.ui.location.val(address);
-                        });
-                    }
-
-                    */
                     function update(lat, lng) {
                         var latLng = new google.maps.LatLng(lat, lng);
                         self.content.currentView.model.set({ Latitude: lat, Longitude: lng });
                         geocoder.geocode({'latLng': latLng}, function(results, status) {
                             var address;
-                            console.log(results);
+
                             if (status == google.maps.GeocoderStatus.OK) {
                                 address = results[0].formatted_address;
                             } else {
@@ -301,10 +323,13 @@ define(['marionette', 'underscore', 'jquery', 'text!layout/main/main.html',
             this.$("#content").on('mouseover append', function() {
                 self.$("#scrollblock").perfectScrollbar('update');
             });
+
         },
 
         onShow: function() {
             var self = this;
+
+            spinner.spin(this.$(".spinner").get(0));
 
             var mapOptions = {
                 zoom: self.model.get('zoom'),
@@ -426,6 +451,10 @@ define(['marionette', 'underscore', 'jquery', 'text!layout/main/main.html',
 
             this.map = new google.maps.Map(this.$('#map-canvas')[0], mapOptions);
 
+            google.maps.event.addListenerOnce(this.map, 'tilesloaded', function () {
+                self.mapIdlePromise.resolve();
+            });
+
             if(!(this.model.exists()) && navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(function(position) {
                     var pos = new google.maps.LatLng(position.coords.latitude,
@@ -439,7 +468,6 @@ define(['marionette', 'underscore', 'jquery', 'text!layout/main/main.html',
             $(window).on('beforeunload', function() {
                 self.saveState()
             });
-
         },
 
         onBeforeDestroy: function() {

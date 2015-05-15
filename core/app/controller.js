@@ -1,46 +1,49 @@
-define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, session) {
+define(['jquery', 'backbone', 'marionette', 'session'], function ($, Backbone, Marionette, session) {
 
     'use strict';
 
     var main;
 
-    var history = { previous: 'feed', name: 'ленту' };
+    var history = { previous: 'feed', name: 'вернуться в ленту' };
 
-    function mainContent (view, callback) {
+    var mainLayoutShow = (function() {
+        var layout, deferred;
 
-        callback = callback || function() {};
+        return function () {
+            deferred = new $.Deferred();
 
-        require(['layout/main'], function (Layout) {
-            if (main.currentView instanceof Layout) {
-                main.currentView.content.show(view);
-
-                callback();
-            } else {
-                require(['layout/main/maps', 'events/collection', 'events/model', 'layout/main/marker_view', 'header/view',
-                'header/model'], function (Map, Collection, EventModel, MarkerView, HeaderView, HeaderModel) {
-                    main.show(new Layout({
-                        model: new Map(),
-                        collection: new Collection([], {
-                            model: EventModel,
-                            markerView: MarkerView
-                        })
-                    }));
-
+            require(['main/layout', 'main/map_model', 'events/collection', 'event/model', 'header/view',
+                'header/model'], function (Layout, Map, Collection, EventModel, HeaderView, HeaderModel) {
+                if (main.currentView instanceof Layout) {
+                    deferred.resolve();
+                } else {
                     var model = new HeaderModel();
 
-                    model.fetch({
+                    var fetchPromise = model.fetch({
                         success: function() {
-                            main.currentView.header.show(new HeaderView({ model: model }));
-                            callback();
+                            layout.header.show(new HeaderView({ model: model }));
                         }
                     });
 
-                    main.currentView.content.show(view);
-                });
-            }
-        });
+                    layout = new Layout({
+                        model: new Map(),
+                        collection: new Collection([], {
+                            model: EventModel
+                        }),
+                        headerPromise: fetchPromise
+                    });
 
-    }
+                    layout.on("ready", function() {
+                        deferred.resolve();
+                    });
+
+                    main.show(layout);
+                }
+            });
+
+            return deferred.promise();
+        }
+    })();
 
     function sessionExists() {
         return session.getToken() !== '';
@@ -57,6 +60,27 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
         }
     }
 
+    var opts = {
+        lines: 10,
+        length: 12,
+        width: 7,
+        radius: 25,
+        corners: 1,
+        rotate: 0,
+        direction: 1,
+        color: '#c0392b',
+        speed: 1,
+        trail: 60,
+        shadow: false,
+        hwaccel: false,
+        className: 'spinner',
+        zIndex: 2e9,
+        top: '50%',
+        left: '50%'
+    };
+
+    var spinner = new Spinner(opts);
+
     return Marionette.Controller.extend({
 
         initialize: function(options) {
@@ -66,20 +90,24 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
         home: function () {
             sessionAction({
                 missing: function() {
-                    require(['layout/home', 'login/view', 'register/view', 'external/view', 'login/model',
+                    require(['home/layout', 'login/view', 'register/view', 'external/view', 'login/model',
                         'register/model', 'external/model'], function(Layout, LoginView, RegisterView, ExternalView,
                                                                       LoginModel, RegisterModel, ExternalModel) {
 
-                        main.show(new Layout());
-                        main.currentView.login.show(new LoginView({ model: new LoginModel() }));
-                        main.currentView.register.show(new RegisterView({ model: new RegisterModel() }));
-
+                        var layout = new Layout();
                         var model = new ExternalModel();
+                        layout.on("render", function() {
+                            layout.login.show(new LoginView({ model: new LoginModel() }));
+                            layout.register.show(new RegisterView({ model: new RegisterModel() }));
+                            layout.external.show(new ExternalView({ model: model }));
+                        });
+
                         model.fetch({
                             success: function() {
-                                main.currentView.external.show(new ExternalView({ model: model }));
+                                main.show(layout);
                             }
                         });
+
 
                     });
                 }
@@ -97,13 +125,12 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
         feed: function () {
             sessionAction({
                 exists: function() {
-                    history = { previous: Backbone.history.fragment, name: 'ленту' };
+                    history = { previous: Backbone.history.fragment, name: 'вернуться в ленту' };
 
-                    require(['feed/layout', 'feed/collection_view',
+                    $.when(mainLayoutShow()).done(function() {
+                        require(['feed/layout', 'feed/collection_view',
                         'feed/item_view'], function (Layout, CollectionView, ItemView) {
-                        var view = new Layout();
-
-                        mainContent(view, function() {
+                            main.currentView.content.show(new Layout());
                             var content = main.currentView.content.currentView;
 
                             content.entries.show(new CollectionView({
@@ -113,7 +140,6 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
 
                             main.currentView.enableEndlessScroll();
                         });
-
                     });
                 }
             });
@@ -122,10 +148,22 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
         event: function(eventid) {
             sessionAction({
                 exists: function() {
-                    require(['event/layout'], function (Layout) {
-                        var view = new Layout({ templateHelpers: history });
-                        mainContent(view, function() {
-                            main.currentView.header.currentView.dropup();
+                    $.when(mainLayoutShow()).done(function() {
+                        require(['event/layout', 'event/model'], function (Layout, Model) {
+                            var layout = main.currentView;
+
+                            layout.content.empty();
+                            spinner.spin(layout.content.$el.get(0));
+                            layout.header.currentView.dropup();
+
+                            var model = new Model({ id: eventid });
+
+                            model.fetch({
+                                success: function() {
+                                    spinner.stop();
+                                    layout.content.show(new Layout({ templateHelpers: history, model: model }));
+                                }
+                            });
                         });
                     });
                 }
@@ -135,11 +173,11 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
         profile: function(username) {
             sessionAction({
                 exists: function() {
-                    history = { previous: Backbone.history.fragment, name: 'облачко' };
-
-                    require(['profile/view', 'profile/model'], function (View, Model) {
-                        var view = new View({ model: new Model({ username: username }) });
-                        mainContent(view);
+                    history = { previous: Backbone.history.fragment, name: 'вернуться в облачко' };
+                    $.when(mainLayoutShow()).done(function() {
+                        require(['profile/view', 'profile/model'], function (View, Model) {
+                            main.currentView.content.show(new View({ model: new Model({ username: username }) }));
+                        });
                     });
                 }
             });
@@ -148,9 +186,9 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
         add: function() {
             sessionAction({
                 exists: function() {
-                    require(['add/view', 'event/model'], function (View, Model) {
-                        var view = new View({ templateHelpers: history , model: new Model() });
-                        mainContent(view, function() {
+                    $.when(mainLayoutShow()).done(function() {
+                        require(['add/view', 'event/model'], function (View, Model) {
+                            main.currentView.content.show(new View({ templateHelpers: history , model: new Model() }));
                             main.currentView.enableMarker();
                         });
                     });

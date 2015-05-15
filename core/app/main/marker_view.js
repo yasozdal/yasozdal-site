@@ -1,3 +1,6 @@
+/* Нигде не используется (пока). Основная цель - удобное отображение маркеров,
+однако тут есть свои проблемы, связанные с утечками памяти и всем таким. */
+
 define(['marionette', 'underscore', 'text!layout/main/marker.html'], function (Marionette, _, mainTemplate) {
 
     'use strict';

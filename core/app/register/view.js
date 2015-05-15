@@ -3,11 +3,33 @@ define(['marionette', 'underscore', 'json2',
 
     'use strict';
 
+    var opts = {
+        lines: 10,
+        length: 12,
+        width: 7,
+        radius: 25,
+        corners: 1,
+        rotate: 0,
+        direction: 1,
+        color: '#c0392b',
+        speed: 1,
+        trail: 60,
+        shadow: false,
+        hwaccel: false,
+        className: 'spinner',
+        zIndex: 2e9,
+        top: '50%',
+        left: '50%'
+    };
+
+    var spinner = new Spinner(opts);
+
     return Marionette.ItemView.extend({
 
         modelEvents: {
             "error": "handleError",
-            "logged": "logged"
+            "logged": "logged",
+            "change": "change"
         },
 
         template: _.template(mainTemplate),
@@ -20,7 +42,8 @@ define(['marionette', 'underscore', 'json2',
             username: "input[name=username]",
             password: "input[name=password]",
             email: "input[name=email]",
-            error: ".error"
+            error: ".error",
+            form: "fieldset"
         },
 
         handleError: function(model, xhr, options) {
@@ -37,6 +60,8 @@ define(['marionette', 'underscore', 'json2',
 
             this.$('.error .content').html(description);
             this.ui.error.show();
+            spinner.stop();
+            this.ui.form.prop("disabled", false);
         },
 
         logged: function() {
@@ -45,6 +70,12 @@ define(['marionette', 'underscore', 'json2',
 
         onRender: function() {
             this.ui.error.hide();
+        },
+
+        change: function() {
+            this.ui.form.prop("disabled", true);
+            spinner.spin(this.$el.get(0));
+            this.model.register();
         },
 
         register: function(e) {
@@ -58,7 +89,6 @@ define(['marionette', 'underscore', 'json2',
                 Email: this.$('input[name=email]').val(),
                 Password: this.$('input[name=password]').val()})
             })
-
             */
 
             this.model.set({

@@ -23,14 +23,14 @@ define(['backbone', 'jquery', 'app/config', 'signalr', 'signalrHubs'], function 
         },
 
         comparator: function(event) {
-            return -event.get('EventId');
+            return -event.get('Id');
             //т.к. у нас всеобщий Id для событий, то сортировать по нему равносильно
             //сортировке по времени... вообще один Id для всех событий не самая лучшая идея, или нет?
         },
 
         fetchUntil: function(eventId) {
             var self = this;
-            if (!(this.find(function(event) { return event.get("EventId") == eventId; }))) {
+            if (!(this.find(function(event) { return event.get("Id") == eventId; }))) {
                 self.fetch({
                     remove: false,
                     data: { count: 1 },

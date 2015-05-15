@@ -1,4 +1,4 @@
-define(['marionette', 'underscore', 'text!layout/home/home.html'], function (Marionette, _, mainTemplate) {
+define(['marionette', 'underscore', 'text!home/tpl/layout.html'], function (Marionette, _, mainTemplate) {
 
     'use strict';
 

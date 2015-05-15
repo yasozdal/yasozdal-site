@@ -19,20 +19,21 @@ define(['marionette', 'jquery', 'underscore', 'json2', 'text!add/tpl/form.html',
             hour: "select[name=hour]",
             minute: "select[name=minute]",
             error: ".error",
-            success: ".success"
+            form: "fieldset"
         },
 
         added: false,
 
         add: function(e) {
             e.preventDefault();
+            this.ui.form.prop("disabled", true);
+            this.ui.date.datepicker('disable');
 
             var self = this;
 
             this.trigger('add:start');
 
             this.ui.error.hide();
-            this.ui.success.hide();
 
             this.model.set({
                 Description: this.ui.description.val(),
@@ -51,13 +52,15 @@ define(['marionette', 'jquery', 'underscore', 'json2', 'text!add/tpl/form.html',
                     self.trigger('add:error');
                     self.$(".error .content").html("Oops! Наверное, вам стоит заполнить все поля.");
                     self.ui.error.show();
+
+                    self.ui.form.prop("disabled", false);
+                    self.ui.date.datepicker('enable');
                 }
             });
         },
 
         onRender: function() {
             this.ui.error.hide();
-            this.ui.success.hide();
 
             var options = {
                 showOn: "both",

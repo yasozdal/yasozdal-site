@@ -1,19 +1,30 @@
-define(['backbone', 'app/config'], function (Backbone, config) {
+define(['backbone', 'app/config', 'plugins/date'], function (Backbone, config) {
 
     'use strict';
 
-    //стоит знать, что при сохранении сервер возвращает {EventId:int}
-
     return Backbone.Model.extend({
-        url: config.API + 'Events',
+        urlRoot: config.API + 'Events',
 
-        defaults: {
-            Latitude: '',
-            Longitude: '',
-            Description: '',
-            EventDate: '',
-            CategoryId: '',
-            PhotoIds: []
+        parse: function(response) {
+            var self = this;
+
+            response.Id = response.EventId;
+            delete response.EventId;
+
+            if (!(response.User.Photo)) {
+                response.User.Photo = 'img/user.png';
+            }
+
+            var eventDate = Date.parse(response.EventDate.slice(0, -1));
+            var dateCreate = Date.parse(response.DateCreate.slice(0, -1));
+            response.EventDate = eventDate.toString("dd MMM HH:mm");
+            response.DateCreate = dateCreate.toString("dd MMM HH:mm");
+            response.Location = 'У чёрта на куличиках!';
+            response.Location = response.LocationCaption === 'unknown' ? response.Location :
+                (response.LocationCaption || response.Location);
+            delete response.LocationCaption;
+
+            return response;
         }
     });
 

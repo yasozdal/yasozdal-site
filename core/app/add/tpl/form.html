@@ -1,18 +1,20 @@
 <div id="new-event">
-    <a href="#<%= previous %>" class="previous"><i class="fa fa-arrow-circle-left"></i> вернуться в <%= name %></a>
+    <a href="#<%= previous %>" class="previous"><i class="fa fa-arrow-circle-left"></i> <%= name %></a>
     <div class="error">
         <div class="icon"></div>
         <div class="content"></div>
     </div>
     <form>
-        <textarea name="description" rows="3" placeholder="Wazzup?"></textarea>
-        <div class="location">
-            <input type="text" name="location" placeholder="Перетащи маркер на карту! :)" />
-            <div class="small-marker"></div>
-        </div>
-        <input placeholder="Дата" type="text" readonly="readonly" name="date" style="width: 186px;"/>
-        <span>в</span><label><select name="hour"></select></label><span>:</span><label><select name="minute" ></select></label>
-        <div style="clear: both"></div>
-        <input type="submit" value="создать" />
+        <fieldset>
+            <textarea name="description" rows="3" placeholder="Wazzup?"></textarea>
+            <div class="location">
+                <input type="text" name="location" placeholder="Перетащи маркер на карту! :)" />
+                <div class="small-marker"></div>
+            </div>
+            <input placeholder="Дата" type="text" readonly="readonly" name="date" style="width: 186px;"/>
+            <span>в</span><label><select name="hour"></select></label><span>:</span><label><select name="minute" ></select></label>
+            <div style="clear: both"></div>
+            <input type="submit" value="создать" />
+        </fieldset>
     </form>
 </div>

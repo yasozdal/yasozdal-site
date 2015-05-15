@@ -48,8 +48,13 @@ define(['jquery', 'backbone', 'marionette', 'app/router', 'app/controller',
 
         //место ли здесь этому?
         session.on('logout', function() {
+            if (!document.body.style.backgroundImage) {
+                document.body.style.backgroundImage = "url('img/bg.jpg')";
+            }
+
             Backbone.history.navigate('/', { trigger: true });
         });
+
 
         var router = new Router({ controller: new Controller({ main: app.mainRegion }) });
 

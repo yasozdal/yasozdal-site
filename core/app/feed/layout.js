@@ -1,5 +1,4 @@
-define(['marionette', 'underscore', 'text!feed/tpl/layout.html',
-'common/spinner'], function (Marionette, _, mainTemplate, Spinner) {
+define(['marionette', 'underscore', 'text!feed/tpl/layout.html'], function (Marionette, _, mainTemplate) {
 
     'use strict';
 
@@ -8,10 +7,7 @@ define(['marionette', 'underscore', 'text!feed/tpl/layout.html',
         template: _.template(mainTemplate),
 
         regions: {
-            entries: {
-                regionClass: Spinner,
-                selector: "#entries"
-            }
+            entries: "#entries"
         },
 
         /*events: {

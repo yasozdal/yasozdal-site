@@ -10,7 +10,6 @@ define(['backbone', 'session'], function (Backbone, session) {
         },
 
         initialize: function() {
-            this.on('change', this.login);
             this.listenTo(session, 'error', this.handleError);
             this.listenTo(session, 'sync', this.logged);
         },

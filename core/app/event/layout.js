@@ -1,5 +1,4 @@
-define(['marionette', 'underscore', 'text!event/tpl/layout.html',
-'common/spinner'], function (Marionette, _, mainTemplate, Spinner) {
+define(['marionette', 'underscore', 'text!event/tpl/layout.html'], function (Marionette, _, mainTemplate) {
 
     'use strict';
 
@@ -8,11 +7,28 @@ define(['marionette', 'underscore', 'text!event/tpl/layout.html',
         template: _.template(mainTemplate),
 
         regions: {
-            entry: {
-                regionClass: Spinner,
-                selector: "#entry"
-            },
             comments: "#comments"
+        },
+
+        events: {
+            "click .location": "navigate"
+        },
+
+        initialize: function(options) {
+            this.templateHelpers = options.templateHelpers;
+        },
+
+        navigate: function() {
+            this.trigger("navigated", { lat: this.model.get('Latitude'), lng: this.model.get('Longitude') });
+        },
+
+        onBeforeRender: function() {
+            var location = this.model.get("Location");
+            if (location.length > 40) {
+                this.templateHelpers.Location = location.substring(0, 40).trim() + "...";
+            } else {
+                this.templateHelpers.Location = location;
+            }
         }
 
     });

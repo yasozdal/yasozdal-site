@@ -10,6 +10,14 @@ define(['marionette', 'underscore', 'text!feed/tpl/entry.html'], function (Mario
             Location: ''
         },
 
+        events: {
+            "click .location": "navigate"
+        },
+
+        navigate: function() {
+            this.model.trigger("navigated", { lat: this.model.get('Latitude'), lng: this.model.get('Longitude') });
+        },
+
         onBeforeRender: function() {
             var location = this.model.get("Location");
             if (location.length > 25) {

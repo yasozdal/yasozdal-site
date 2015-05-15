@@ -1,4 +1,19 @@
-<div>
-    <!--<a href="#<%= previous %>" class="previous"><i class="fa fa-arrow-circle-left"></i> вернуться в <%= name %></a>-->
-    <img src="img/coming_soon.png" class="coming-soon" />
+<div class="entry">
+    <a href="#<%= previous %>" class="previous"><i class="fa fa-arrow-circle-left"></i> <%= name %></a>
+    <div class="userpic">
+        <img src="<%= User.Photo %>" />
+    </div>
+    <div class="userinfo">
+        <div class="username">
+            <a href="#<%= User.UserName %>" class="normal"><%= User.UserName %></a>
+        </div>
+        <div class="date-create"><%= DateCreate %></div>
+    </div>
+    <div style="clear: both"></div>
+    <div class="description">
+        <%= Description %>
+    </div>
+    <span class="info date"><i class="fa fa-clock-o fa-lg"></i><%= EventDate %></span>
+    <span class="info location"><i class="fa fa-map-marker fa-lg"></i><%= Location %></span>
+    <div id="comments">Comments are coming soon! :3</div>
 </div>

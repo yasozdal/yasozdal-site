@@ -4,7 +4,6 @@ require.config({
 
     paths: {
         app: '../app',
-        layout: '../app/layout',
         header: '../app/header',
         external: '../app/external',
         common: '../app/common',
@@ -17,6 +16,7 @@ require.config({
         feed: '../app/feed',
         profile: '../app/profile',
         home: '../app/home',
+        main: '../app/main',
         text: 'plugins/require/text',
         async: 'plugins/require/async',
         gmaps: 'http://maps.google.com/maps/api/js?v=3.9&sensor=false&libraries=places',
