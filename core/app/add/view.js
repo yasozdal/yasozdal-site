@@ -45,7 +45,7 @@ define(['marionette', 'jquery', 'underscore', 'json2', 'text!add/tpl/form.html',
             this.model.save(this.model.attributes, {
                 success: function() {
                     self.added = true;
-                    Backbone.history.navigate('/event/' + self.model.get("EventId"), {trigger: true});
+                    Backbone.history.navigate('/event/' + self.model.get("Id"), {trigger: true});
                 },
 
                 error: function() {

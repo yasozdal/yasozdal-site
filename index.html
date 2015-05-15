@@ -62,7 +62,7 @@
         };
         var target = document.getElementById('preloader');
         var spinner = new Spinner(opts).spin(target);
-        if (!window.location.hash || window.location.hash == '') {
+        if (!localStorage.getItem('session')) {
             document.body.style.backgroundImage = "url('img/bg.jpg')";
         }
     </script>

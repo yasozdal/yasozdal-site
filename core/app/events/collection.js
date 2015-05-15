@@ -8,7 +8,7 @@ define(['backbone', 'jquery', 'app/config', 'signalr', 'signalrHubs'], function 
 
         initialize: function() {
             var self = this;
-            this.fetch({ data: { count: 15 } });
+            this.fillPromise = this.fetch({ data: { count: 15 } });
 
             $.connection.hub.url = config.SignalR;
             var hub = $.connection.eventsHub;

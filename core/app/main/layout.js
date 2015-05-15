@@ -66,7 +66,7 @@ define(['marionette', 'underscore', 'jquery', 'text!main/tpl/layout.html',
             this.markers = [];
             this.mapIdlePromise = new $.Deferred();
 
-            $.when(this.mapIdlePromise, options.headerPromise).done(function() {
+            $.when(this.mapIdlePromise, options.headerPromise, this.collection.fillPromise).done(function() {
                 self.trigger("ready");
                 spinner.stop();
                 self.$("#loader").remove();
@@ -181,18 +181,17 @@ define(['marionette', 'underscore', 'jquery', 'text!main/tpl/layout.html',
                         marker.setAnimation(null)
                     }, 1500);
 
-                    var pushed;
+                    var pushed = self.markers.push({
+                        marker: marker,
+                        infoWindow: null
+                    });
 
                     self.listenTo(self.content.currentView, 'add:start', function() {
                         marker.setOptions({ draggable: false });
-                        pushed = self.markers.push({
-                            marker: marker,
-                            infoWindow: null
-                        });
                     });
 
                     self.listenTo(self.content.currentView, 'add:end', function() {
-                        self.markers.splice(pushed, 1);
+                        self.markers.splice(pushed - 1, 1);
                         marker.setMap(null);
                     });
 

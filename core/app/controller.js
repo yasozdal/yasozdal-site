@@ -187,8 +187,8 @@ define(['jquery', 'backbone', 'marionette', 'session'], function ($, Backbone, M
             sessionAction({
                 exists: function() {
                     $.when(mainLayoutShow()).done(function() {
-                        require(['add/view', 'event/model'], function (View, Model) {
-                            main.currentView.content.show(new View({ templateHelpers: history , model: new Model() }));
+                        require(['add/view', 'add/model'], function (View, Model) {
+                            main.currentView.content.show(new View({ templateHelpers: history, model: new Model() }));
                             main.currentView.enableMarker();
                         });
                     });

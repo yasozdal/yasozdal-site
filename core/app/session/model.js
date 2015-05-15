@@ -62,6 +62,7 @@ define(['backbone', 'json2', 'app/config'], function (Backbone, JSON, config) {
 
         logout: function () {
             this.set({ token: '' });
+            localStorage.removeItem('session');
             this.trigger('logout');
         }
 
