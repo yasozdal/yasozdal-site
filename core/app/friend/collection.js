@@ -14,7 +14,7 @@ define(['backbone', 'app/config'], function (Backbone, config) {
         else {
             return url + 'my/';
         }
-    };
+    }
 
     return Backbone.Collection.extend({
 

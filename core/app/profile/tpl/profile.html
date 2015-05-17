@@ -3,18 +3,12 @@
         <span class="link follow">подписаться</span>
         <span class="link unfollow">отписаться</span>
     </div>
-    <div class="border-helper">
-        <div class="userpic">
-            <img src="<%= Photo %>" />
+    <div class="userpic">
+        <img src="<%= Photo %>" />
+    </div>
+    <div class="userinfo">
+        <div class="username">
+            <%= UserName %>
         </div>
-        <div class="userinfo">
-            <div class="username">
-                <%= UserName %>
-            </div>
-        </div>
-        <div style="clear: both"></div>
-        <span class="mates">Друзей: <%= Mates %> </span>
-        <span class="followers">Подписчиков: <%= Followers %></span>
-        <span class="following">Подписан на: <%= Following %></a></span>
     </div>
 </div>

@@ -142,8 +142,9 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
         profile: function(userid) {
             sessionAction({
                 exists: function() {
-                    require(['profile/view', 'profile/model', 'friend/collection', 'header/model'],
-                    function (View, Model, FriendCollection, Header) {
+                    require(['profile/view', 'profile/model', 'friend/collection', 'header/model',
+                        'profile/layout','feed/collection_view', 'feed/item_view'],
+                    function (View, Model, FriendCollection, Header, Layout) {
                         var model = new Model({ UserId: userid});
                         var collection = new FriendCollection();
                         var header = new Header();
@@ -151,6 +152,8 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
                         header.fetch({
                             success: function () {
                                 collection.followers(userid, function () {
+                                    model.set("Followers", collection.length);
+
                                     if (userid == header.get('UserId')){
                                         model.set("is_following", 0);
                                     }
@@ -165,8 +168,6 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
 
                                 });
 
-                                model.set("Followers", collection.length);
-
                                 collection.mates(userid, function(){
                                     model.set("Mates", collection.length);
 
@@ -174,8 +175,10 @@ define(['backbone', 'marionette', 'session'], function (Backbone, Marionette, se
                                         model.set("Following", collection.length);
 
                                         model.info(function() {
-                                            var view = new View({ templateHelpers: history, model: model});
-                                            mainContent(view);
+                                            var view = new Layout({ model: model });
+                                            mainContent(view, function() {
+                                                view.profile.show(new View({ model: model }));
+                                            });
                                         });
                                     });
                                 });

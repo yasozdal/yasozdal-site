@@ -1,5 +1,6 @@
-define(['marionette', 'underscore', 'text!profile/tpl/profile.html', 'friend/model'],
-    function (Marionette, _, mainTemplate, Model) {
+define(['marionette', 'underscore', 'text!profile/tpl/profile.html', 'friend/model',
+    'friends/collection_view', 'friends/item_view'],
+    function (Marionette, _, mainTemplate, Model, CollectionView, View) {
 
     'use strict';
 
