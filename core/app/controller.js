@@ -153,7 +153,8 @@ define(['jquery', 'backbone', 'marionette', 'session'], function ($, Backbone, M
                             var layout = main.currentView;
 
                             layout.content.empty();
-                            spinner.spin(layout.content.$el.get(0));
+                            layout.$("#scrollblock").perfectScrollbar('update');
+                            spinner.spin(layout.$("#main").get(0));
                             layout.header.currentView.dropup();
 
                             var model = new Model({ id: eventid });
