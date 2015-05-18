@@ -32,6 +32,7 @@ define(['backbone', 'app/config', 'session'], function (Backbone, config, sessio
         },
 
         register: function() {
+            var self = this;
             this.save(this.attributes, { success: function() { session.login(self.attributes); } });
         }
 
